@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=7 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Texture2D" uid="uid://sqgoxnb6jxdy" path="res://Art/Envioment/InvisibleBlocks.png" id="1_41umx"]
 [ext_resource type="Texture2D" uid="uid://dj17b23cry0ap" path="res://Art/Envioment/Wblock.png" id="1_q2xck"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
+[ext_resource type="Texture2D" uid="uid://ck2uon8sad4xo" path="res://Art/Envioment/Bblock.png" id="2_bi3hp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_60vop"]
 texture = ExtResource("1_41umx")
@@ -27,12 +28,20 @@ sources/0 = SubResource("TileSetAtlasSource_60vop")
 
 [node name="Tutorial" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRectW" type="TextureRect" parent="."]
 offset_left = -4307.0
 offset_top = -6371.0
 offset_right = 20347.0
 offset_bottom = 5643.0
 texture = ExtResource("1_q2xck")
+
+[node name="TextureRectB" type="TextureRect" parent="."]
+visible = false
+offset_left = -4318.0
+offset_top = -6299.0
+offset_right = 20422.0
+offset_bottom = 5657.0
+texture = ExtResource("2_bi3hp")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2cgvj")
