@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=8 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Texture2D" uid="uid://sqgoxnb6jxdy" path="res://Art/Envioment/InvisibleBlocks.png" id="1_41umx"]
 [ext_resource type="Texture2D" uid="uid://dj17b23cry0ap" path="res://Art/Envioment/Wblock.png" id="1_q2xck"]
@@ -25,6 +25,9 @@ texture_region_size = Vector2i(60, 60)
 tile_size = Vector2i(60, 60)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_60vop")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38pr4"]
+size = Vector2(24690, 2285.75)
 
 [node name="Tutorial" type="Node2D"]
 
@@ -56,3 +59,12 @@ remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1, -114)
+
+[node name="Fallzone" type="Area2D" parent="."]
+position = Vector2(-431, 991)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fallzone"]
+position = Vector2(8452, 650.125)
+shape = SubResource("RectangleShape2D_38pr4")
+
+[connection signal="body_entered" from="Fallzone" to="CharacterBody2D" method="fallzone_entered"]
