@@ -27,15 +27,26 @@ tile_size = Vector2i(60, 60)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_60vop")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38pr4"]
+size = Vector2(24690, 2285.75)
+
 [node name="Tutorial" type="Node2D"]
 script = ExtResource("1_v1w1j")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRectW" type="TextureRect" parent="."]
 offset_left = -4307.0
 offset_top = -6371.0
 offset_right = 20347.0
 offset_bottom = 5643.0
 texture = ExtResource("1_q2xck")
+
+[node name="TextureRectB" type="TextureRect" parent="."]
+visible = false
+offset_left = -4318.0
+offset_top = -6299.0
+offset_right = 20422.0
+offset_bottom = 5657.0
+texture = ExtResource("2_bi3hp")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2cgvj")
@@ -66,3 +77,12 @@ remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1, -114)
+
+[node name="Fallzone" type="Area2D" parent="."]
+position = Vector2(-431, 991)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fallzone"]
+position = Vector2(8452, 650.125)
+shape = SubResource("RectangleShape2D_38pr4")
+
+[connection signal="body_entered" from="Fallzone" to="CharacterBody2D" method="fallzone_entered"]
