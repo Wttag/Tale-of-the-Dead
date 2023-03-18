@@ -19,7 +19,7 @@ func _on_toggle_changed():
 	
 
 	for i in get_layers_count():
-		
+	
 		var modulate_color = get_layer_modulate(i)
 		print('layer',i)
 		var existsInTheLight = layer_definitions[i].existsInTheLight
@@ -28,11 +28,11 @@ func _on_toggle_changed():
   
 		if global_toggle:
 			set_layer_enabled(i,existsInTheLight)	
-			modulate_color = Color.GHOST_WHITE
+			#modulate_color = Color.GHOST_WHITE
 			
 		else:
 			set_layer_enabled(i,existsInTheDark)
-			modulate_color = color
+			#modulate_color = color
 			
 		
 		set_layer_modulate(i, modulate_color)
