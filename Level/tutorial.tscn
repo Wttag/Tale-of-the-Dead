@@ -2,8 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://sqgoxnb6jxdy" path="res://Art/Envioment/InvisibleBlocks.png" id="1_41umx"]
 [ext_resource type="Texture2D" uid="uid://dj17b23cry0ap" path="res://Art/Envioment/Wblock.png" id="1_q2xck"]
+[ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
-[ext_resource type="Texture2D" uid="uid://ck2uon8sad4xo" path="res://Art/Envioment/Bblock.png" id="2_bi3hp"]
+[ext_resource type="Script" path="res://Code/level_1_layer.gd" id="4_pvlco"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_60vop"]
 texture = ExtResource("1_41umx")
@@ -30,6 +31,7 @@ sources/0 = SubResource("TileSetAtlasSource_60vop")
 size = Vector2(24690, 2285.75)
 
 [node name="Tutorial" type="Node2D"]
+script = ExtResource("1_v1w1j")
 
 [node name="TextureRectW" type="TextureRect" parent="."]
 offset_left = -4307.0
@@ -49,7 +51,23 @@ texture = ExtResource("2_bi3hp")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2cgvj")
 format = 2
-layer_0/tile_data = PackedInt32Array(65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, -196600, 131072, 0, -196599, 131072, 0, -196598, 131072, 0, -196597, 131072, 0, -196596, 131072, 0, -393200, 65536, 0, -393199, 65536, 0, -393198, 65536, 0, -196585, 131072, 0, -196584, 131072, 0, -196583, 131072, 0, -196582, 131072, 0, -196581, 131072, 0, -393197, 65536, 0, 32, 0, 0, 33, 0, 0, 34, 0, 0, 35, 0, 0, 36, 0, 0, 37, 0, 0, 38, 0, 0, 39, 0, 0, 40, 0, 0)
+layer_0/enabled = false
+layer_0/tile_data = PackedInt32Array(65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 32, 0, 0, 33, 0, 0, 34, 0, 0, 35, 0, 0, 36, 0, 0, 37, 0, 0, 38, 0, 0, 39, 0, 0, 40, 0, 0, 65531, 0, 0)
+layer_1/name = ""
+layer_1/enabled = false
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(-196600, 65536, 0, -196599, 65536, 0, -196598, 65536, 0, -196597, 65536, 0, -196596, 65536, 0, -196585, 65536, 0, -196584, 65536, 0, -196583, 65536, 0, -196582, 65536, 0, -196581, 65536, 0)
+layer_2/name = ""
+layer_2/enabled = true
+layer_2/modulate = Color(1, 1, 1, 1)
+layer_2/y_sort_enabled = false
+layer_2/y_sort_origin = 0
+layer_2/z_index = 0
+layer_2/tile_data = PackedInt32Array(-65525, 65536, 0, 12, 65536, 0, 65549, 65536, 0, 65550, 65536, 0, 65551, 65536, 0, 65552, 65536, 0, 65553, 65536, 0, 131090, 65536, 0, 196627, 65536, 0, 262164, 65536, 0, 262165, 65536, 0, 262166, 65536, 0, 262167, 65536, 0)
+script = ExtResource("4_pvlco")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_4o7g1")]
 position = Vector2(1, -114)
