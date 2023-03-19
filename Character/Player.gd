@@ -53,5 +53,5 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func fallzone_entered(body):
-	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
+#func fallzone_entered(_CharacterBody2D):
+	#get_tree().change_scene_to_file("res://Level/tutorial.tscn")
