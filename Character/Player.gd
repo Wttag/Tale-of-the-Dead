@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 
-const SPEED = 1000.0
-const JUMP_VELOCITY = -1000.0
-const DOUBLE_JUMP_VELOCITY = -800.0
+const SPEED = 900.0
+const JUMP_VELOCITY = -900.0
+const DOUBLE_JUMP_VELOCITY = -1000.0
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -63,5 +63,8 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-#func fallzone_entered(_CharacterBody2D):
-	#get_tree().change_scene_to_file("res://Level/tutorial.tscn")
+
+
+#deathzone 
+func _on_fallzone_body_entered(_CharacterBody2D):
+	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
