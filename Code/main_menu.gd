@@ -4,7 +4,6 @@ func _on_start_pressed():
 	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
 	
 
-
 func _on_book_of_yokai_pressed():
 	pass # Replace with function body.
 

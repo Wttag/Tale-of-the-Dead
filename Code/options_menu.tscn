@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bnyy2avsydfa2"]
+[gd_scene load_steps=2 format=3 uid="uid://bnyy2avsydfa2"]
+
+[ext_resource type="Script" path="res://Code/options_menu.gd" id="1_doglp"]
 
 [node name="Options Menu" type="Control"]
 layout_mode = 3
@@ -7,14 +9,97 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_doglp")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Back"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="Audio" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -43.0
+offset_right = 216.0
+offset_bottom = 43.0
+grow_vertical = 2
+
+[node name="Labels" type="VBoxContainer" parent="Audio"]
+layout_mode = 2
+size_flags_horizontal = 2
+
+[node name="Master" type="Label" parent="Audio/Labels"]
+layout_mode = 2
+text = "Master"
+
+[node name="Music" type="Label" parent="Audio/Labels"]
+layout_mode = 2
+text = "Music"
+
+[node name="Sound FX" type="Label" parent="Audio/Labels"]
+layout_mode = 2
+text = "Sound FX"
+
+[node name="Sliders" type="VBoxContainer" parent="Audio"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="Master" type="HSlider" parent="Audio/Sliders"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Music" type="HSlider" parent="Audio/Sliders"]
 layout_mode = 2
+
+[node name="Sound FX" type="HSlider" parent="Audio/Sliders"]
+layout_mode = 2
+
+[node name="Video" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 140.0
+
+[node name="Labels" type="VBoxContainer" parent="Video"]
+layout_mode = 2
+
+[node name="Full Screen" type="Label" parent="Video/Labels"]
+layout_mode = 2
+text = "Full Screen"
+
+[node name="Borderless" type="Label" parent="Video/Labels"]
+layout_mode = 2
+text = "Borderless"
+
+[node name="V Sync" type="Label" parent="Video/Labels"]
+layout_mode = 2
+text = "V Sync"
+
+[node name="Checks" type="VBoxContainer" parent="Video"]
+layout_mode = 2
+
+[node name="Full Screen" type="CheckButton" parent="Video/Checks"]
+layout_mode = 2
+
+[node name="Borderless" type="CheckButton" parent="Video/Checks"]
+layout_mode = 2
+
+[node name="V Sync" type="CheckButton" parent="Video/Checks"]
+layout_mode = 2
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="value_changed" from="Audio/Sliders/Master" to="." method="_on_master_value_changed"]
+[connection signal="value_changed" from="Audio/Sliders/Music" to="." method="_on_music_value_changed"]
+[connection signal="value_changed" from="Audio/Sliders/Sound FX" to="." method="_on_sound_fx_value_changed"]
+[connection signal="toggled" from="Video/Checks/Full Screen" to="." method="_on_full_screen_toggled"]
+[connection signal="toggled" from="Video/Checks/Borderless" to="." method="_on_borderless_toggled"]
+[connection signal="toggled" from="Video/Checks/V Sync" to="." method="_on_v_sync_toggled"]
