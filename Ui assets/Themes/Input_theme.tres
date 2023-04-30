@@ -1,0 +1,28 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://dd2ua5llgumx0"]
+
+[ext_resource type="Texture2D" uid="uid://5wllirge01b4" path="res://Ui assets/Ui assets.svg" id="1_yedfo"]
+[ext_resource type="FontFile" uid="uid://cchltnn5nvb5f" path="res://Ui assets/font/Kamikaze.ttf" id="2_ft0ce"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n4ubr"]
+texture = ExtResource("1_yedfo")
+region_rect = Rect2(40, 1198, 60, 60)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ttusd"]
+texture = ExtResource("1_yedfo")
+region_rect = Rect2(40, 1114, 60, 60)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r652a"]
+texture = ExtResource("1_yedfo")
+region_rect = Rect2(40, 1283, 60, 60)
+
+[resource]
+default_font = ExtResource("2_ft0ce")
+default_font_size = 40
+Button/colors/font_color = Color(0.541176, 0.121569, 0.0196078, 1)
+Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_pressed_color = Color(0.541176, 0.121569, 0.0196078, 1)
+Button/constants/h_separation = 0
+Button/font_sizes/font_size = 40
+Button/styles/hover = SubResource("StyleBoxTexture_n4ubr")
+Button/styles/normal = SubResource("StyleBoxTexture_ttusd")
+Button/styles/pressed = SubResource("StyleBoxTexture_r652a")
