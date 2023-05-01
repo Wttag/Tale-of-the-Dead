@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqulxxrkr54h4"
-path="res://.godot/imported/Toggle_on.svg-9c447d042120b32ab29ad06b0f701ba1.ctex"
+uid="uid://ba8grwl3w4lk8"
+path="res://.godot/imported/Slider_base.svg-da59d9f20ccf552ab76cef82068d519f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ui assets/SVG/Toggle_on.svg"
-dest_files=["res://.godot/imported/Toggle_on.svg-9c447d042120b32ab29ad06b0f701ba1.ctex"]
+source_file="res://Ui assets/Slider_base.svg"
+dest_files=["res://.godot/imported/Slider_base.svg-da59d9f20ccf552ab76cef82068d519f.ctex"]
 
 [params]
 
