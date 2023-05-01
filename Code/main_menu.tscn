@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://ceaul3up1mlgf"]
+[gd_scene load_steps=6 format=3 uid="uid://ceaul3up1mlgf"]
 
 [ext_resource type="Script" path="res://Code/main_menu.gd" id="1_ne8xb"]
+[ext_resource type="Theme" uid="uid://fp5grunycriw" path="res://Ui assets/Themes/main_menu_theme.tres" id="1_nyc54"]
+[ext_resource type="Texture2D" uid="uid://c4wyukfqfaana" path="res://Ui assets/BG/Main_menu_bg.jpg" id="2_dpxhu"]
+[ext_resource type="Texture2D" uid="uid://2yi1epekwftl" path="res://Ui assets/Logo/main_logo.jpg" id="3_6251a"]
+[ext_resource type="Theme" uid="uid://yxeb1ysqoxrh" path="res://Ui assets/Themes/options_theme.tres" id="5_4qgnd"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -9,60 +13,97 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_nyc54")
 script = ExtResource("1_ne8xb")
 
-[node name="Play" type="VBoxContainer" parent="."]
-layout_mode = 2
-offset_left = 517.0
-offset_top = 344.5
-offset_right = 563.0
-offset_bottom = 375.5
-size_flags_horizontal = 4
-size_flags_vertical = 4
+[node name="BG" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_dpxhu")
+stretch_mode = 5
 
-[node name="Play" type="Button" parent="Play"]
-layout_mode = 2
-text = "Play"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="Ui" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -109.0
-offset_top = -33.0
-offset_right = 109.0
-offset_bottom = 33.0
+offset_left = -335.0
+offset_top = -456.0
+offset_right = 336.0
+offset_bottom = 456.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 36
+alignment = 1
 
-[node name="Black" type="VBoxContainer" parent="HBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="Ui"]
+layout_mode = 2
+texture = ExtResource("3_6251a")
+stretch_mode = 5
+
+[node name="Play" type="VBoxContainer" parent="Ui"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_nyc54")
+
+[node name="Play" type="Button" parent="Ui/Play"]
+custom_minimum_size = Vector2(252, 72)
+layout_mode = 2
+theme = ExtResource("5_4qgnd")
+text = "Play"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Ui"]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="Black" type="VBoxContainer" parent="Ui/HBoxContainer"]
 layout_mode = 2
 
-[node name="Book of Yokai" type="Button" parent="HBoxContainer/Black"]
+[node name="Book of Yokai" type="Button" parent="Ui/HBoxContainer/Black"]
 layout_mode = 2
+size_flags_horizontal = 8
+theme = ExtResource("1_nyc54")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.541176, 0.121569, 0.0196078, 1)
+theme_override_colors/font_hover_color = Color(0.255659, 0.255659, 0.255659, 1)
 text = "Book of Yokai"
 
-[node name="Options" type="Button" parent="HBoxContainer/Black"]
+[node name="Options" type="Button" parent="Ui/HBoxContainer/Black"]
 layout_mode = 2
+size_flags_horizontal = 8
+theme = ExtResource("1_nyc54")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.541176, 0.121569, 0.0196078, 1)
+theme_override_colors/font_hover_color = Color(0.34902, 0.34902, 0.34902, 1)
 text = "Option"
 
-[node name="White" type="VBoxContainer" parent="HBoxContainer"]
+[node name="White" type="VBoxContainer" parent="Ui/HBoxContainer"]
 layout_mode = 2
+theme = ExtResource("1_nyc54")
 
-[node name="Map of Yoni" type="Button" parent="HBoxContainer/White"]
+[node name="Levels" type="Button" parent="Ui/HBoxContainer/White"]
 layout_mode = 2
+size_flags_horizontal = 0
+theme = ExtResource("1_nyc54")
 text = "Map of Yoni"
 
-[node name="Quit" type="Button" parent="HBoxContainer/White"]
+[node name="Quit" type="Button" parent="Ui/HBoxContainer/White"]
 layout_mode = 2
+size_flags_horizontal = 0
+theme = ExtResource("1_nyc54")
 text = "Quit
 "
 
-[connection signal="pressed" from="Play/Play" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="HBoxContainer/Black/Book of Yokai" to="." method="_on_book_of_yokai_pressed"]
-[connection signal="pressed" from="HBoxContainer/Black/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="HBoxContainer/White/Map of Yoni" to="." method="_on_map_of_yoni_pressed"]
-[connection signal="pressed" from="HBoxContainer/White/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Ui/Play/Play" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Ui/HBoxContainer/Black/Book of Yokai" to="." method="_on_book_of_yokai_pressed"]
+[connection signal="pressed" from="Ui/HBoxContainer/Black/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Ui/HBoxContainer/White/Levels" to="." method="_on_map_of_yoni_pressed"]
+[connection signal="pressed" from="Ui/HBoxContainer/White/Quit" to="." method="_on_quit_pressed"]
