@@ -9,7 +9,7 @@ func _on_book_of_yokai_pressed():
 
 
 func _on_map_of_yoni_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Code/levels_menu.tscn")
 
 
 func _on_options_pressed():
