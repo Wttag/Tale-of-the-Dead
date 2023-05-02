@@ -32,9 +32,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -558.0
-offset_top = -283.5
+offset_top = -343.5
 offset_right = 558.0
-offset_bottom = 283.5
+offset_bottom = 343.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 64
@@ -48,6 +48,7 @@ horizontal_alignment = 1
 
 [node name="Level Buttons" type="GridContainer" parent="Content"]
 layout_mode = 2
+size_flags_vertical = 3
 theme_override_constants/h_separation = 24
 theme_override_constants/v_separation = 24
 columns = 10
