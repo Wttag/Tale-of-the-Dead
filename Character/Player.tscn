@@ -240,9 +240,10 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l84vt"]
 radius = 65.0
-height = 198.0
+height = 238.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_y34h0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -252,5 +253,5 @@ autoplay = "Idle"
 frame_progress = 0.656663
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, 9)
+position = Vector2(-3, 40)
 shape = SubResource("CapsuleShape2D_l84vt")

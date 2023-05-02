@@ -20,5 +20,6 @@ theme = ExtResource("1_ovmgy")
 toggle_mode = true
 text = "#"
 script = ExtResource("2_vgnd7")
+level_path = "res://Code/levels_menu.tscn"
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
