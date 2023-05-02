@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://b74bu1yoea0l"]
+
+[ext_resource type="FontFile" uid="uid://cchltnn5nvb5f" path="res://Ui assets/font/Kamikaze.ttf" id="1_40tui"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0qc6l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_md21x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xejjk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xd6a3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_whje4"]
+
+[resource]
+default_font = ExtResource("1_40tui")
+default_font_size = 48
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(0.857553, 0.862926, 0.895418, 1)
+Button/colors/font_pressed_color = Color(0.541176, 0.121569, 0.0196078, 1)
+Button/styles/disabled = SubResource("StyleBoxEmpty_0qc6l")
+Button/styles/focus = SubResource("StyleBoxEmpty_md21x")
+Button/styles/hover = SubResource("StyleBoxEmpty_xejjk")
+Button/styles/normal = SubResource("StyleBoxEmpty_xd6a3")
+Button/styles/pressed = SubResource("StyleBoxEmpty_whje4")
