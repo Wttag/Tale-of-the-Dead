@@ -8,7 +8,8 @@ func set_toggle():
 	shift = !shift
 	realm_shifted.emit()
 
+#pause
+func _unhandled_input(event: InputEvent):
+	if event.is_action_pressed("ui_cancel"):
+		$pause_menu.pause()
 
-
-func _on_back_pressed():
-	get_tree().change_scene_to_file("res://Code/main_menu.tscn")

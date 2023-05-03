@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=7 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
 [ext_resource type="TileSet" uid="uid://b7as6gkeup2gg" path="res://Level/tilemap.tres" id="3_7o6i2"]
 [ext_resource type="Script" path="res://Code/level_1_layer.gd" id="4_iccr0"]
+[ext_resource type="PackedScene" uid="uid://53pply6qyic6" path="res://Code/pause_menu.tscn" id="5_2ysvb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
 size = Vector2(21543, 628.5)
@@ -12,6 +13,7 @@ size = Vector2(21543, 628.5)
 script = ExtResource("1_v1w1j")
 
 [node name="TileMap" type="TileMap" parent="."]
+process_mode = 1
 position = Vector2(-12, 0)
 tile_set = ExtResource("3_7o6i2")
 format = 2
@@ -53,5 +55,7 @@ editor_draw_limits = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fallzone"]
 position = Vector2(10770.5, 696.25)
 shape = SubResource("RectangleShape2D_djuvu")
+
+[node name="Pause" parent="." instance=ExtResource("5_2ysvb")]
 
 [connection signal="body_entered" from="Fallzone" to="CharacterBody2D" method="_on_fallzone_body_entered"]
