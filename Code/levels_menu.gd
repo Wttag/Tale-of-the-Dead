@@ -8,10 +8,10 @@ const LEVEL_BTN = preload("res://Code/lvl_button.gd")
 
 @onready var grid = $"Content/Level Buttons"
 
-func _ready(): --> void:
+func _ready():
 	get_levels(dir_path)
 
-func get_levels(path) --> void:
+func get_levels(path):
 	var dir = Dictionary.new()
 	if dir.open(path) == OK:
 		dir.list_dir_begin()
