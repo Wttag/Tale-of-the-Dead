@@ -14,7 +14,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_gq0oh")
 script = ExtResource("2_d41eo")
-dir_path = "res://Level"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
