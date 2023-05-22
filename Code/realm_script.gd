@@ -7,7 +7,7 @@ var layer_definitions = [RealmDefinition.new(),RealmDefinition.new()]
 
 func _ready():
 	
-	var level = get_node("/root/Tutorial")
+	var level = get_node("/root/World")
 	
 	level.realm_shifted.connect(_on_toggle_changed)
 	_on_toggle_changed()
@@ -15,7 +15,7 @@ func _ready():
 
 func _on_toggle_changed():
 
-	var global_toggle = get_node("/root/Tutorial").shift
+	var global_toggle = get_node("/root/World").shift
 	
 
 	for i in get_layers_count():

@@ -16,7 +16,7 @@ func _input(event):
 	if event is InputEventKey:
 		if event.keycode == KEY_SPACE:
 			if event.is_pressed():
-				get_node("/root/Tutorial").set_toggle()
+				get_node("/root/World").set_toggle()
 
 func _physics_process(delta):
 	# Add the gravity.
