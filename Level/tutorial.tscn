@@ -38,13 +38,13 @@ script = ExtResource("4_iccr0")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_4o7g1")]
 position = Vector2(2060, -127)
+scale = Vector2(1, 1)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="CharacterBody2D"]
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(2060, -127)
-scale = Vector2(0.5, 0.5)
 limit_left = 0
 limit_bottom = 350
 position_smoothing_enabled = true
