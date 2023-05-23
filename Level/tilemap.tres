@@ -1,102 +1,386 @@
-[gd_resource type="TileSet" load_steps=40 format=3 uid="uid://b7as6gkeup2gg"]
+[gd_resource type="TileSet" load_steps=38 format=3 uid="uid://b7as6gkeup2gg"]
 
 [ext_resource type="Texture2D" uid="uid://xhpfxcpu4kim" path="res://Art/Tilemaps/Platforms Black.png" id="1_5hl1o"]
+[ext_resource type="Texture2D" uid="uid://ces8upsngw3x6" path="res://Art/Tilemaps/Grass.png" id="1_e6l1i"]
 [ext_resource type="Texture2D" uid="uid://cb60dm7x6rxpm" path="res://Art/Tilemaps/Platforms White.png" id="2_74njm"]
 [ext_resource type="Texture2D" uid="uid://c2jidsxtatfyn" path="res://Art/Tilemaps/Tiles.png" id="3_shfd7"]
 [ext_resource type="Texture2D" uid="uid://b0xii11j1kpo4" path="res://Art/Tilemaps/Tilemap_static.png" id="4_l38no"]
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_apwjv"]
-tile_data = PackedInt32Array(65536, 1, 8, 1, 65537, 7, 65537, 65537, 8, 2, 131073, 7, 65538, 131073, 8, 3, 196609, 7, 65539, 196609, 8, 4, 262145, 7, 65540, 262145, 8, 65541, 327681, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_2cd75"]
+tile_data = PackedInt32Array(0, 262144, 2, 65536, 262144, 3, 1, 327680, 2, 65537, 327680, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_efah7"]
-tile_data = PackedInt32Array(0, 1966085, 8, 1, 2031621, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_pxq1y"]
+tile_data = PackedInt32Array(0, 393216, 2, 65536, 393216, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_fwq1s"]
-tile_data = PackedInt32Array(65536, 1, 6, 1, 65537, 5, 65537, 65537, 6, 2, 131073, 5, 65538, 131073, 6, 3, 196609, 5, 65539, 196609, 6, 4, 262145, 5, 65540, 262145, 6, 5, 327681, 5, 65541, 327681, 6)
+[sub_resource type="TileMapPattern" id="TileMapPattern_tbtcm"]
+tile_data = PackedInt32Array(0, 327680, 0, 65536, 327680, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_eyad0"]
-tile_data = PackedInt32Array(0, 786433, 0, 1, 851969, 0)
+[sub_resource type="TileMapPattern" id="TileMapPattern_x0eht"]
+tile_data = PackedInt32Array(0, 393216, 0, 65536, 393216, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_jw078"]
-tile_data = PackedInt32Array(0, 655361, 0, 1, 720897, 0)
+[sub_resource type="TileMapPattern" id="TileMapPattern_y601n"]
+tile_data = PackedInt32Array(0, 458752, 0, 65536, 458752, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_vcqn5"]
-tile_data = PackedInt32Array(0, 524289, 0, 1, 589825, 0)
+[sub_resource type="TileMapPattern" id="TileMapPattern_r4t5m"]
+tile_data = PackedInt32Array(0, 524288, 0, 65536, 524288, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_tsmjt"]
-tile_data = PackedInt32Array(0, 393217, 0, 1, 458753, 0)
+[sub_resource type="TileMapPattern" id="TileMapPattern_3hccp"]
+tile_data = PackedInt32Array(0, 589824, 0, 65536, 589824, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_gqgdg"]
-tile_data = PackedInt32Array(0, 1, 1, 65536, 1, 2, 1, 65537, 1, 65537, 65537, 2, 2, 131073, 1, 65538, 131073, 2, 65539, 196609, 2)
+[sub_resource type="TileMapPattern" id="TileMapPattern_slgio"]
+tile_data = PackedInt32Array(0, 917504, 2, 65536, 917504, 3, 1, 983040, 2, 65537, 983040, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_ylo57"]
-tile_data = PackedInt32Array(0, 262145, 1, 65536, 262145, 2, 65537, 327681, 2, 2, 393217, 1, 65538, 393217, 2)
+[sub_resource type="TileMapPattern" id="TileMapPattern_pcpbw"]
+tile_data = PackedInt32Array(0, 1048576, 2, 65536, 1048576, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_dg5g5"]
-tile_data = PackedInt32Array(0, 458753, 1, 65536, 458753, 2, 65537, 524289, 2, 2, 589825, 1, 65538, 589825, 2)
+[sub_resource type="TileMapPattern" id="TileMapPattern_q3bac"]
+tile_data = PackedInt32Array(0, 1114112, 2, 65536, 1114112, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_c0bvu"]
-tile_data = PackedInt32Array(0, 1, 4, 1, 65537, 4)
+[sub_resource type="TileMapPattern" id="TileMapPattern_urj70"]
+tile_data = PackedInt32Array(0, 1179648, 2, 65536, 1179648, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_sb3tm"]
-tile_data = PackedInt32Array(0, 131073, 4, 1, 196609, 4)
+[sub_resource type="TileMapPattern" id="TileMapPattern_yktwi"]
+tile_data = PackedInt32Array(0, 1245184, 2, 65536, 1245184, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_lohnn"]
-tile_data = PackedInt32Array(0, 655361, 8, 1, 720897, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_n2dh2"]
+tile_data = PackedInt32Array(0, 458752, 2, 65536, 458752, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_5r36y"]
-tile_data = PackedInt32Array(0, 262145, 4)
+[sub_resource type="TileMapPattern" id="TileMapPattern_6pjca"]
+tile_data = PackedInt32Array(0, 655360, 0, 65536, 655360, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_kxf4n"]
-tile_data = PackedInt32Array(0, 327681, 4)
+[sub_resource type="TileMapPattern" id="TileMapPattern_pqm6r"]
+tile_data = PackedInt32Array(0, 720896, 0, 65536, 720896, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_xbs2h"]
-tile_data = PackedInt32Array(0, 1835013, 8, 1, 1900549, 8, 2, 1966085, 8, 3, 2031621, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_vuqae"]
+tile_data = PackedInt32Array(0, 786432, 0, 65536, 786432, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_oi7ji"]
-tile_data = PackedInt32Array(0, 655362, 8, 1, 720898, 8, 2, 786434, 8, 3, 851970, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_iqfhb"]
+tile_data = PackedInt32Array(0, 851968, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_mej63"]
-tile_data = PackedInt32Array(0, 655362, 7, 1, 720898, 7)
+[sub_resource type="TileMapPattern" id="TileMapPattern_1mhup"]
+tile_data = PackedInt32Array(0, 917504, 0, 65536, 917504, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_0phpg"]
-tile_data = PackedInt32Array(0, 5, 18, 1, 65541, 18, 2, 131077, 18, 3, 196613, 18)
+[sub_resource type="TileMapPattern" id="TileMapPattern_f7gcq"]
+tile_data = PackedInt32Array(0, 983040, 0, 65536, 983040, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_qbceg"]
-tile_data = PackedInt32Array(65536, 2, 6, 1, 65538, 5, 65537, 65538, 6, 2, 131074, 5, 65538, 131074, 6, 3, 196610, 5, 65539, 196610, 6, 4, 262146, 5, 65540, 262146, 6, 65541, 327682, 6)
+[sub_resource type="TileMapPattern" id="TileMapPattern_ijd2k"]
+tile_data = PackedInt32Array(0, 1048576, 0, 65536, 1048576, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_agc2l"]
-tile_data = PackedInt32Array(0, 786434, 0, 1, 851970, 0)
+[sub_resource type="TileMapPattern" id="TileMapPattern_37sl4"]
+tile_data = PackedInt32Array(0, 524288, 2, 65536, 524288, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_mpinl"]
-tile_data = PackedInt32Array(65536, 655362, 2, 65537, 720898, 2, 65538, 786434, 2, 3, 851970, 1, 65539, 851970, 2)
+[sub_resource type="TileMapPattern" id="TileMapPattern_gf6hv"]
+tile_data = PackedInt32Array(0, 589824, 2, 65536, 589824, 3)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_3oiib"]
-tile_data = PackedInt32Array(0, 655361, 8, 1, 720897, 8, 2, 131075, 0, 65538, 655361, 7, 3, 131075, 0, 65539, 851969, 7, 4, 131075, 0, 65540, 655361, 4, 131076, 655361, 8, 5, 131075, 0, 65541, 131075, 0, 131077, 720897, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_rx3gb"]
+tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_2yslw"]
-tile_data = PackedInt32Array(0, 1835013, 8, 1, 1900549, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_30suh"]
+tile_data = PackedInt32Array(0, 65536, 0, 65536, 65536, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_qenwg"]
-tile_data = PackedInt32Array(0, 131075, 0, 65536, 131075, 0, 131072, 851969, 7, 1, 131075, 0, 65537, 131075, 0, 131073, 786433, 7, 2, 131075, 0, 65538, 131075, 0, 131074, 851969, 7, 3, 131075, 0, 65539, 720897, 7, 4, 131075, 0, 65540, 786433, 7, 5, 131075, 0, 65541, 851969, 7, 6, 1966085, 8, 7, 2031621, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_vkhdg"]
+tile_data = PackedInt32Array(0, 131072, 0, 65536, 131072, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_bfk7m"]
-tile_data = PackedInt32Array(65536, 655361, 2, 1, 720897, 1, 65537, 720897, 2, 2, 786433, 1, 65538, 786433, 2, 3, 851969, 1, 65539, 851969, 2)
+[sub_resource type="TileMapPattern" id="TileMapPattern_3h65j"]
+tile_data = PackedInt32Array(0, 196608, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_27m7u"]
-tile_data = PackedInt32Array(0, 655361, 8, 1, 720897, 8, 2, 786433, 8, 3, 851969, 8)
+[sub_resource type="TileMapPattern" id="TileMapPattern_fshqb"]
+tile_data = PackedInt32Array(0, 262144, 0, 65536, 262144, 1)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_duyvv"]
-tile_data = PackedInt32Array(0, 786433, 7, 1, 851969, 7)
-
-[sub_resource type="TileMapPattern" id="TileMapPattern_yfwuk"]
-tile_data = PackedInt32Array(0, 655361, 7, 1, 720897, 7)
-
-[sub_resource type="TileMapPattern" id="TileMapPattern_ul73s"]
-tile_data = PackedInt32Array(0, 655361, 4, 65536, 655361, 5, 131072, 655361, 6, 1, 720897, 4, 65537, 720897, 5, 131073, 720897, 6)
-
-[sub_resource type="TileMapPattern" id="TileMapPattern_g4aqj"]
-tile_data = PackedInt32Array(0, 786433, 4, 65536, 786433, 5, 131072, 786433, 6, 1, 851969, 4, 65537, 851969, 5, 131073, 851969, 6)
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ueh8x"]
+texture = ExtResource("1_e6l1i")
+texture_region_size = Vector2i(120, 120)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+7:0/0 = 0
+7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_0/angular_velocity = 0.0
+8:0/0 = 0
+8:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:0/0/physics_layer_0/angular_velocity = 0.0
+9:0/0 = 0
+9:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:0/0/physics_layer_0/angular_velocity = 0.0
+10:0/0 = 0
+10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:0/0/physics_layer_0/angular_velocity = 0.0
+11:0/0 = 0
+11:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:0/0/physics_layer_0/angular_velocity = 0.0
+12:0/0 = 0
+12:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:0/0/physics_layer_0/angular_velocity = 0.0
+14:0/0 = 0
+14:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:0/0/physics_layer_0/angular_velocity = 0.0
+15:0/0 = 0
+15:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:0/0/physics_layer_0/angular_velocity = 0.0
+16:0/0 = 0
+16:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:0/0/physics_layer_0/angular_velocity = 0.0
+17:0/0 = 0
+17:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:0/0/physics_layer_0/angular_velocity = 0.0
+18:0/0 = 0
+18:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:0/0/physics_layer_0/angular_velocity = 0.0
+19:0/0 = 0
+19:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+3:1/0 = 0
+3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:1/0/physics_layer_0/angular_velocity = 0.0
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+5:1/0 = 0
+5:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+7:1/0 = 0
+7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_0/angular_velocity = 0.0
+8:1/0 = 0
+8:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:1/0/physics_layer_0/angular_velocity = 0.0
+9:1/0 = 0
+9:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:1/0/physics_layer_0/angular_velocity = 0.0
+10:1/0 = 0
+10:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:1/0/physics_layer_0/angular_velocity = 0.0
+11:1/0 = 0
+11:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:1/0/physics_layer_0/angular_velocity = 0.0
+12:1/0 = 0
+12:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+12:1/0/physics_layer_0/angular_velocity = 0.0
+13:1/0 = 0
+13:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+13:1/0/physics_layer_0/angular_velocity = 0.0
+14:1/0 = 0
+14:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:1/0/physics_layer_0/angular_velocity = 0.0
+15:1/0 = 0
+15:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:1/0/physics_layer_0/angular_velocity = 0.0
+16:1/0 = 0
+16:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:1/0/physics_layer_0/angular_velocity = 0.0
+17:1/0 = 0
+17:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:1/0/physics_layer_0/angular_velocity = 0.0
+18:1/0 = 0
+18:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:1/0/physics_layer_0/angular_velocity = 0.0
+19:1/0 = 0
+19:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:1/0/physics_layer_0/angular_velocity = 0.0
+0:2/0 = 0
+0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/size_in_atlas = Vector2i(3, 1)
+1:2/0 = 0
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+4:2/0 = 0
+4:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:2/0/physics_layer_0/angular_velocity = 0.0
+5:2/0 = 0
+5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0 = 0
+6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_0/angular_velocity = 0.0
+7:2/0 = 0
+7:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:2/0/physics_layer_0/angular_velocity = 0.0
+8:2/0 = 0
+8:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:2/0/physics_layer_0/angular_velocity = 0.0
+9:2/0 = 0
+9:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:2/0/physics_layer_0/angular_velocity = 0.0
+10:2/0 = 0
+10:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:2/0/physics_layer_0/angular_velocity = 0.0
+11:2/size_in_atlas = Vector2i(3, 1)
+11:2/0 = 0
+11:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:2/0/physics_layer_0/angular_velocity = 0.0
+14:2/0 = 0
+14:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:2/0/physics_layer_0/angular_velocity = 0.0
+15:2/0 = 0
+15:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:2/0/physics_layer_0/angular_velocity = 0.0
+16:2/0 = 0
+16:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:2/0/physics_layer_0/angular_velocity = 0.0
+17:2/0 = 0
+17:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:2/0/physics_layer_0/angular_velocity = 0.0
+18:2/0 = 0
+18:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:2/0/physics_layer_0/angular_velocity = 0.0
+19:2/0 = 0
+19:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:2/0/physics_layer_0/angular_velocity = 0.0
+0:3/0 = 0
+0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:3/0/physics_layer_0/angular_velocity = 0.0
+1:3/size_in_atlas = Vector2i(3, 1)
+1:3/0 = 0
+1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:3/0/physics_layer_0/angular_velocity = 0.0
+4:3/0 = 0
+4:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:3/0/physics_layer_0/angular_velocity = 0.0
+5:3/0 = 0
+5:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:3/0/physics_layer_0/angular_velocity = 0.0
+6:3/0 = 0
+6:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:3/0/physics_layer_0/angular_velocity = 0.0
+7:3/0 = 0
+7:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:3/0/physics_layer_0/angular_velocity = 0.0
+8:3/0 = 0
+8:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:3/0/physics_layer_0/angular_velocity = 0.0
+9:3/0 = 0
+9:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:3/0/physics_layer_0/angular_velocity = 0.0
+10:3/0 = 0
+10:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:3/0/physics_layer_0/angular_velocity = 0.0
+11:3/size_in_atlas = Vector2i(3, 1)
+11:3/0 = 0
+11:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:3/0/physics_layer_0/angular_velocity = 0.0
+14:3/0 = 0
+14:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:3/0/physics_layer_0/angular_velocity = 0.0
+15:3/0 = 0
+15:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:3/0/physics_layer_0/angular_velocity = 0.0
+16:3/0 = 0
+16:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:3/0/physics_layer_0/angular_velocity = 0.0
+17:3/0 = 0
+17:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:3/0/physics_layer_0/angular_velocity = 0.0
+18:3/0 = 0
+18:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+18:3/0/physics_layer_0/angular_velocity = 0.0
+19:3/0 = 0
+19:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+19:3/0/physics_layer_0/angular_velocity = 0.0
+0:4/0 = 0
+0:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:4/0/physics_layer_0/angular_velocity = 0.0
+1:4/size_in_atlas = Vector2i(3, 1)
+1:4/0 = 0
+1:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:4/0/physics_layer_0/angular_velocity = 0.0
+4:4/0 = 0
+4:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:4/0/physics_layer_0/angular_velocity = 0.0
+5:4/0 = 0
+5:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:4/0/physics_layer_0/angular_velocity = 0.0
+6:4/0 = 0
+6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:4/0/physics_layer_0/angular_velocity = 0.0
+7:4/0 = 0
+7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:4/0/physics_layer_0/angular_velocity = 0.0
+8:4/0 = 0
+8:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:4/0/physics_layer_0/angular_velocity = 0.0
+9:4/0 = 0
+9:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+9:4/0/physics_layer_0/angular_velocity = 0.0
+10:4/0 = 0
+10:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:4/0/physics_layer_0/angular_velocity = 0.0
+11:4/size_in_atlas = Vector2i(3, 1)
+11:4/0 = 0
+11:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:4/0/physics_layer_0/angular_velocity = 0.0
+14:4/size_in_atlas = Vector2i(2, 1)
+14:4/0 = 0
+14:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:4/0/physics_layer_0/angular_velocity = 0.0
+0:5/0 = 0
+0:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:5/0/physics_layer_0/angular_velocity = 0.0
+1:5/size_in_atlas = Vector2i(3, 1)
+1:5/0 = 0
+1:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:5/0/physics_layer_0/angular_velocity = 0.0
+4:5/size_in_atlas = Vector2i(2, 1)
+4:5/0 = 0
+4:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:5/0/physics_layer_0/angular_velocity = 0.0
+6:5/size_in_atlas = Vector2i(2, 1)
+6:5/0 = 0
+6:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:5/0/physics_layer_0/angular_velocity = 0.0
+10:5/0 = 0
+10:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+10:5/0/physics_layer_0/angular_velocity = 0.0
+11:5/size_in_atlas = Vector2i(3, 1)
+11:5/0 = 0
+11:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+11:5/0/physics_layer_0/angular_velocity = 0.0
+14:5/0 = 0
+14:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+14:5/0/physics_layer_0/angular_velocity = 0.0
+15:5/size_in_atlas = Vector2i(2, 1)
+15:5/0 = 0
+15:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+15:5/0/physics_layer_0/angular_velocity = 0.0
+8:5/size_in_atlas = Vector2i(2, 1)
+8:5/0 = 0
+8:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+8:5/0/physics_layer_0/angular_velocity = 0.0
+17:5/size_in_atlas = Vector2i(3, 1)
+17:5/0 = 0
+17:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+17:5/0/physics_layer_0/angular_velocity = 0.0
+16:4/size_in_atlas = Vector2i(4, 1)
+16:4/0 = 0
+16:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+16:4/0/physics_layer_0/angular_velocity = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4diot"]
 texture = ExtResource("1_5hl1o")
@@ -2643,34 +2927,31 @@ sources/1 = SubResource("TileSetAtlasSource_4diot")
 sources/2 = SubResource("TileSetAtlasSource_qguw2")
 sources/3 = SubResource("TileSetAtlasSource_qos1v")
 sources/5 = SubResource("TileSetAtlasSource_6meky")
-pattern_0 = SubResource("TileMapPattern_apwjv")
-pattern_1 = SubResource("TileMapPattern_efah7")
-pattern_2 = SubResource("TileMapPattern_lohnn")
-pattern_3 = SubResource("TileMapPattern_2yslw")
-pattern_4 = SubResource("TileMapPattern_bfk7m")
-pattern_5 = SubResource("TileMapPattern_27m7u")
-pattern_6 = SubResource("TileMapPattern_duyvv")
-pattern_7 = SubResource("TileMapPattern_yfwuk")
-pattern_8 = SubResource("TileMapPattern_ul73s")
-pattern_9 = SubResource("TileMapPattern_g4aqj")
-pattern_10 = SubResource("TileMapPattern_fwq1s")
-pattern_11 = SubResource("TileMapPattern_eyad0")
-pattern_12 = SubResource("TileMapPattern_jw078")
-pattern_13 = SubResource("TileMapPattern_vcqn5")
-pattern_14 = SubResource("TileMapPattern_tsmjt")
-pattern_15 = SubResource("TileMapPattern_gqgdg")
-pattern_16 = SubResource("TileMapPattern_ylo57")
-pattern_17 = SubResource("TileMapPattern_dg5g5")
-pattern_18 = SubResource("TileMapPattern_c0bvu")
-pattern_19 = SubResource("TileMapPattern_sb3tm")
-pattern_20 = SubResource("TileMapPattern_5r36y")
-pattern_21 = SubResource("TileMapPattern_kxf4n")
-pattern_22 = SubResource("TileMapPattern_xbs2h")
-pattern_23 = SubResource("TileMapPattern_oi7ji")
-pattern_24 = SubResource("TileMapPattern_mej63")
-pattern_25 = SubResource("TileMapPattern_0phpg")
-pattern_26 = SubResource("TileMapPattern_qbceg")
-pattern_27 = SubResource("TileMapPattern_agc2l")
-pattern_28 = SubResource("TileMapPattern_mpinl")
-pattern_29 = SubResource("TileMapPattern_3oiib")
-pattern_30 = SubResource("TileMapPattern_qenwg")
+sources/0 = SubResource("TileSetAtlasSource_ueh8x")
+pattern_0 = SubResource("TileMapPattern_2cd75")
+pattern_1 = SubResource("TileMapPattern_pxq1y")
+pattern_2 = SubResource("TileMapPattern_n2dh2")
+pattern_3 = SubResource("TileMapPattern_37sl4")
+pattern_4 = SubResource("TileMapPattern_gf6hv")
+pattern_5 = SubResource("TileMapPattern_rx3gb")
+pattern_6 = SubResource("TileMapPattern_30suh")
+pattern_7 = SubResource("TileMapPattern_vkhdg")
+pattern_8 = SubResource("TileMapPattern_3h65j")
+pattern_9 = SubResource("TileMapPattern_fshqb")
+pattern_10 = SubResource("TileMapPattern_tbtcm")
+pattern_11 = SubResource("TileMapPattern_x0eht")
+pattern_12 = SubResource("TileMapPattern_y601n")
+pattern_13 = SubResource("TileMapPattern_r4t5m")
+pattern_14 = SubResource("TileMapPattern_3hccp")
+pattern_15 = SubResource("TileMapPattern_slgio")
+pattern_16 = SubResource("TileMapPattern_pcpbw")
+pattern_17 = SubResource("TileMapPattern_q3bac")
+pattern_18 = SubResource("TileMapPattern_urj70")
+pattern_19 = SubResource("TileMapPattern_yktwi")
+pattern_20 = SubResource("TileMapPattern_6pjca")
+pattern_21 = SubResource("TileMapPattern_pqm6r")
+pattern_22 = SubResource("TileMapPattern_vuqae")
+pattern_23 = SubResource("TileMapPattern_iqfhb")
+pattern_24 = SubResource("TileMapPattern_1mhup")
+pattern_25 = SubResource("TileMapPattern_f7gcq")
+pattern_26 = SubResource("TileMapPattern_ijd2k")
