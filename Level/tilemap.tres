@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=38 format=3 uid="uid://b7as6gkeup2gg"]
+[gd_resource type="TileSet" load_steps=42 format=3 uid="uid://b7as6gkeup2gg"]
 
 [ext_resource type="Texture2D" uid="uid://xhpfxcpu4kim" path="res://Art/Tilemaps/Platforms Black.png" id="1_5hl1o"]
 [ext_resource type="Texture2D" uid="uid://ces8upsngw3x6" path="res://Art/Tilemaps/Grass.png" id="1_e6l1i"]
@@ -66,8 +66,20 @@ tile_data = PackedInt32Array(0, 983040, 0, 65536, 983040, 1)
 [sub_resource type="TileMapPattern" id="TileMapPattern_ijd2k"]
 tile_data = PackedInt32Array(0, 1048576, 0, 65536, 1048576, 1)
 
+[sub_resource type="TileMapPattern" id="TileMapPattern_cmnst"]
+tile_data = PackedInt32Array(0, 1835013, 8, 1, 1900549, 8)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_cm8y5"]
+tile_data = PackedInt32Array(0, 1966085, 8, 1, 2031621, 8)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_it25t"]
+tile_data = PackedInt32Array(0, 5, 18, 1, 65541, 18)
+
 [sub_resource type="TileMapPattern" id="TileMapPattern_37sl4"]
 tile_data = PackedInt32Array(0, 524288, 2, 65536, 524288, 3)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_a3h6o"]
+tile_data = PackedInt32Array(0, 131077, 18, 1, 196613, 18)
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_gf6hv"]
 tile_data = PackedInt32Array(0, 589824, 2, 65536, 589824, 3)
@@ -2955,3 +2967,7 @@ pattern_23 = SubResource("TileMapPattern_iqfhb")
 pattern_24 = SubResource("TileMapPattern_1mhup")
 pattern_25 = SubResource("TileMapPattern_f7gcq")
 pattern_26 = SubResource("TileMapPattern_ijd2k")
+pattern_27 = SubResource("TileMapPattern_cmnst")
+pattern_28 = SubResource("TileMapPattern_cm8y5")
+pattern_29 = SubResource("TileMapPattern_it25t")
+pattern_30 = SubResource("TileMapPattern_a3h6o")
