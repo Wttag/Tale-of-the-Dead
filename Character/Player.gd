@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+var fire = 0
 const SPEED = 1000.0
 const JUMP_VELOCITY = -1000.0
 const DOUBLE_JUMP_VELOCITY = -1000.0
@@ -59,12 +59,15 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
-
 	move_and_slide()
-
+	
 
 
 
 #deathzone 
 func _on_fallzone_body_entered(_CharacterBody2D):
 	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
+	
+func add_fire():
+	fire = fire + 1
+	print("Soul Count:", fire)

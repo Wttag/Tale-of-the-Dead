@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=10 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="Texture2D" uid="uid://x8r6451ewnio" path="res://Art/SVG/Tori gate.png" id="2_1x5p2"]
@@ -7,6 +7,7 @@
 [ext_resource type="TileSet" uid="uid://b7as6gkeup2gg" path="res://Level/tilemap.tres" id="3_7o6i2"]
 [ext_resource type="Script" path="res://Code/level_1_layer.gd" id="4_iccr0"]
 [ext_resource type="PackedScene" uid="uid://53pply6qyic6" path="res://Code/pause_menu.tscn" id="5_2ysvb"]
+[ext_resource type="PackedScene" uid="uid://btmoie57s0ypt" path="res://Code/AssetsScenes/fire.tscn" id="8_dpjyb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
 size = Vector2(35594, 628.5)
@@ -66,6 +67,7 @@ remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(3320, -248)
+scale = Vector2(0.75, 0.75)
 zoom = Vector2(0.6, 0.6)
 limit_left = 0
 limit_bottom = 350
@@ -79,5 +81,11 @@ position = Vector2(17796, 696.25)
 shape = SubResource("RectangleShape2D_djuvu")
 
 [node name="Pause" parent="." instance=ExtResource("5_2ysvb")]
+
+[node name="Fire1" parent="." instance=ExtResource("8_dpjyb")]
+position = Vector2(10997, -707)
+
+[node name="Fire2" parent="." instance=ExtResource("8_dpjyb")]
+position = Vector2(3943, -111)
 
 [connection signal="body_entered" from="Fallzone" to="CharacterBody2D" method="_on_fallzone_body_entered"]
