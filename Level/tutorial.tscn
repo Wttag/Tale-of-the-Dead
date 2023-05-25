@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
-[ext_resource type="Texture2D" uid="uid://x8r6451ewnio" path="res://Art/SVG/Tori gate.png" id="2_1x5p2"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
 [ext_resource type="Texture2D" uid="uid://bbqljlnadq7r1" path="res://Art/Envioment/Dark/White_BG.svg" id="2_8rbel"]
 [ext_resource type="TileSet" uid="uid://b7as6gkeup2gg" path="res://Level/tilemap.tres" id="3_7o6i2"]
+[ext_resource type="PackedScene" uid="uid://bi2fu2rsnavx2" path="res://Code/AssetsScenes/checkpoint.tscn" id="3_duyg7"]
 [ext_resource type="Script" path="res://Code/level_1_layer.gd" id="4_iccr0"]
 [ext_resource type="PackedScene" uid="uid://53pply6qyic6" path="res://Code/pause_menu.tscn" id="5_2ysvb"]
 [ext_resource type="PackedScene" uid="uid://btmoie57s0ypt" path="res://Code/AssetsScenes/fire.tscn" id="8_dpjyb"]
@@ -31,9 +31,8 @@ motion_scale = Vector2(0.9, 0.9)
 [node name="Sprite2D" type="Sprite2D" parent="DarkMode/1"]
 position = Vector2(12857, -380)
 
-[node name="ToriGate" type="Sprite2D" parent="."]
-position = Vector2(24460, -233)
-texture = ExtResource("2_1x5p2")
+[node name="Checkpoint" parent="." instance=ExtResource("3_duyg7")]
+position = Vector2(15357, -214)
 
 [node name="TileMap" type="TileMap" parent="."]
 process_mode = 1
