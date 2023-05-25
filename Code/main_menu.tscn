@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ceaul3up1mlgf"]
+[gd_scene load_steps=5 format=3 uid="uid://ceaul3up1mlgf"]
 
 [ext_resource type="Script" path="res://Code/main_menu.gd" id="1_ne8xb"]
 [ext_resource type="Texture2D" uid="uid://dtbrkndrk1k32" path="res://Ui assets/Main_menu_bg.jpg" id="2_dijgw"]
 [ext_resource type="Theme" uid="uid://yxeb1ysqoxrh" path="res://Ui assets/Themes/options_theme.tres" id="2_kx3vw"]
 [ext_resource type="Texture2D" uid="uid://4o6kqjfp0ab4" path="res://Ui assets/Logo_blur.jpg" id="3_4emid"]
-[ext_resource type="Theme" uid="uid://b74bu1yoea0l" path="res://Ui assets/Themes/text_button_theme.tres" id="5_38gmt"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -32,9 +31,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -310.0
-offset_top = -407.0
+offset_top = -438.0
 offset_right = 310.0
-offset_bottom = 407.0
+offset_bottom = 438.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
@@ -46,7 +45,12 @@ layout_mode = 2
 texture = ExtResource("3_4emid")
 stretch_mode = 5
 
-[node name="Play" type="Button" parent="Content"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Content"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="Play" type="Button" parent="Content/VBoxContainer"]
 custom_minimum_size = Vector2(252, 72)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -54,55 +58,22 @@ size_flags_vertical = 6
 theme = ExtResource("2_kx3vw")
 text = "Play"
 
-[node name="Submenu" type="HBoxContainer" parent="Content"]
+[node name="Options" type="Button" parent="Content/VBoxContainer"]
+custom_minimum_size = Vector2(252, 72)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 64
-
-[node name="Black" type="VBoxContainer" parent="Content/Submenu"]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 24
-
-[node name="Book of Yokai" type="Button" parent="Content/Submenu/Black"]
-layout_mode = 2
-theme = ExtResource("5_38gmt")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.541176, 0.121569, 0.0196078, 1)
-theme_override_colors/font_hover_color = Color(0.301961, 0.301961, 0.301961, 1)
-text = "Book of Yokai"
-alignment = 2
-
-[node name="Options" type="Button" parent="Content/Submenu/Black"]
-layout_mode = 2
-theme = ExtResource("5_38gmt")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.541176, 0.121569, 0.0196078, 1)
-theme_override_colors/font_hover_color = Color(0.301961, 0.301961, 0.301961, 1)
+theme = ExtResource("2_kx3vw")
 text = "Option"
-alignment = 2
 
-[node name="White" type="VBoxContainer" parent="Content/Submenu"]
+[node name="Quit" type="Button" parent="Content/VBoxContainer"]
+custom_minimum_size = Vector2(252, 72)
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/separation = 24
-
-[node name="Map of Yoni" type="Button" parent="Content/Submenu/White"]
-layout_mode = 2
-theme = ExtResource("5_38gmt")
-text = "Map of Yoni"
-alignment = 0
-
-[node name="Quit" type="Button" parent="Content/Submenu/White"]
-layout_mode = 2
-theme = ExtResource("5_38gmt")
+size_flags_horizontal = 4
+theme = ExtResource("2_kx3vw")
 text = "Quit
 "
-alignment = 0
 
-[connection signal="pressed" from="Content/Play" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Content/Submenu/Black/Book of Yokai" to="." method="_on_book_of_yokai_pressed"]
-[connection signal="pressed" from="Content/Submenu/Black/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Content/Submenu/White/Map of Yoni" to="." method="_on_map_of_yoni_pressed"]
-[connection signal="pressed" from="Content/Submenu/White/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Content/VBoxContainer/Play" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Content/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Content/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
