@@ -41,7 +41,7 @@ func _physics_process(delta):
 		elif can_double_jump:
 			velocity.y = DOUBLE_JUMP_VELOCITY
 			can_double_jump = false
-			animated_sprite.set_animation("DoubleJump")
+			
 	
 		
 	# Get the input direction and handle the movement/deceleration.
