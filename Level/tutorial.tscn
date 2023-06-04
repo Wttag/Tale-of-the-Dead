@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=23 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -11,9 +11,16 @@
 [ext_resource type="Texture2D" uid="uid://8y8xtp5uih1p" path="res://Art/SVG/totd_logo_b.svg" id="4_t7x5t"]
 [ext_resource type="Texture2D" uid="uid://b6tusd8v83hj6" path="res://Art/SVG/Guide1Black.svg" id="5_506q1"]
 [ext_resource type="Texture2D" uid="uid://dolv8a76nty0i" path="res://Art/Envioment/Dark/Sun.png" id="5_u8svd"]
+[ext_resource type="Texture2D" uid="uid://v6tew1ohqyi2" path="res://Art/Envioment/Dark/Mountains/Mountain 3.png" id="7_4o3ka"]
 [ext_resource type="Texture2D" uid="uid://bjkllefbe64yf" path="res://Art/SVG/totd_logo_w.svg" id="7_jibxs"]
+[ext_resource type="Texture2D" uid="uid://dq2jld1mfmycd" path="res://Art/Envioment/Dark/Mountains/Mountain 2.png" id="8_c0vrc"]
 [ext_resource type="PackedScene" uid="uid://btmoie57s0ypt" path="res://Code/AssetsScenes/fire.tscn" id="8_dpjyb"]
+[ext_resource type="Texture2D" uid="uid://bln3kim8jamxr" path="res://Art/Envioment/Dark/Mountains/Mountain 1.png" id="9_87cjl"]
 [ext_resource type="Texture2D" uid="uid://b7y5u15xjtrrx" path="res://Art/SVG/Guide1White.svg" id="9_aealh"]
+[ext_resource type="Texture2D" uid="uid://dp0oqgt7rs1p4" path="res://Art/Envioment/Dark/Mountains/Tree 2.png" id="10_yd7ss"]
+[ext_resource type="Texture2D" uid="uid://x7xpwvamm1x2" path="res://Art/Envioment/Dark/Mountains/Tree 1.png" id="11_1f6bx"]
+[ext_resource type="Texture2D" uid="uid://cousufl0mmwkl" path="res://Art/Envioment/Red/Water.png" id="12_j8ivx"]
+[ext_resource type="Texture2D" uid="uid://bbh6kedbkj236" path="res://Art/Envioment/Dark/Mountains/Base.png" id="13_an0mr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
 size = Vector2(35594, 628.5)
@@ -57,6 +64,70 @@ motion_mirroring = Vector2(3840, 2160)
 [node name="BG" type="Sprite2D" parent="DarkMode/WhiteBG"]
 scale = Vector2(3, 3)
 texture = ExtResource("2_8rbel")
+centered = false
+
+[node name="Mountain3" type="ParallaxLayer" parent="DarkMode"]
+motion_scale = Vector2(0.92, 0.92)
+motion_offset = Vector2(30, 0)
+motion_mirroring = Vector2(5760, 0)
+
+[node name="Base" type="Sprite2D" parent="DarkMode/Mountain3"]
+position = Vector2(-8, -874)
+texture = ExtResource("7_4o3ka")
+centered = false
+flip_h = true
+
+[node name="Mountain2" type="ParallaxLayer" parent="DarkMode"]
+motion_scale = Vector2(0.91, 0.91)
+motion_mirroring = Vector2(5760, 0)
+
+[node name="Base" type="Sprite2D" parent="DarkMode/Mountain2"]
+position = Vector2(-8, -664)
+texture = ExtResource("8_c0vrc")
+centered = false
+
+[node name="Mountain" type="ParallaxLayer" parent="DarkMode"]
+motion_scale = Vector2(0.9, 0.9)
+motion_mirroring = Vector2(5760, 0)
+
+[node name="Base" type="Sprite2D" parent="DarkMode/Mountain"]
+position = Vector2(-8, -631)
+texture = ExtResource("9_87cjl")
+centered = false
+
+[node name="Trees 2" type="ParallaxLayer" parent="DarkMode"]
+motion_scale = Vector2(0.89, 1)
+motion_mirroring = Vector2(5760, 0)
+
+[node name="Base" type="Sprite2D" parent="DarkMode/Trees 2"]
+position = Vector2(288, -2)
+texture = ExtResource("10_yd7ss")
+centered = false
+
+[node name="Trees" type="ParallaxLayer" parent="DarkMode"]
+motion_scale = Vector2(0.88, 1)
+motion_mirroring = Vector2(5760, 0)
+
+[node name="Trees" type="Sprite2D" parent="DarkMode/Trees"]
+position = Vector2(-8, -36)
+texture = ExtResource("11_1f6bx")
+centered = false
+
+[node name="Water" type="ParallaxLayer" parent="DarkMode"]
+motion_mirroring = Vector2(5760, 0)
+
+[node name="Trees" type="Sprite2D" parent="DarkMode/Water"]
+position = Vector2(-8, 220)
+texture = ExtResource("12_j8ivx")
+centered = false
+
+[node name="Base" type="ParallaxLayer" parent="DarkMode"]
+motion_scale = Vector2(0.87, 1)
+motion_mirroring = Vector2(5760, 0)
+
+[node name="Base" type="Sprite2D" parent="DarkMode/Base"]
+position = Vector2(-8, 140)
+texture = ExtResource("13_an0mr")
 centered = false
 
 [node name="UItext" type="ParallaxLayer" parent="DarkMode"]
