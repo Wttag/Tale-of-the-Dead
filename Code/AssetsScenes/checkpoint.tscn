@@ -178,10 +178,10 @@ texture = ExtResource("1_wc5pm")
 [node name="Fire" type="AnimatedSprite2D" parent="ToriGate"]
 visible = false
 position = Vector2(0, 225)
-scale = Vector2(1e-05, 1e-05)
 sprite_frames = SubResource("SpriteFrames_c0jru")
 autoplay = "default"
-frame_progress = 0.17748
+frame = 3
+frame_progress = 0.557777
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

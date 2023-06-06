@@ -1,5 +1,9 @@
 extends Area2D
 
+@onready var parent = get_parent()
 
 func _on_body_entered(body):
-	$AnimationPlayer.play("Activate")
+	if body.get_groups().has("player"):
+		$AnimationPlayer.play("Activate")
+		print("entered")
+		parent.set_checkpoint_position(global_position)
