@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://kq6nblh02vbs"]
+
+[ext_resource type="Script" path="res://Code/AssetsScenes/Tanuki.gd" id="1_y4iyp"]
+[ext_resource type="Texture2D" uid="uid://1ls8ns8bi13b" path="res://Art/Character/Tanuki/Untitled_Artwork (3).png" id="2_xck8l"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nvdg4"]
+radius = 324.0
+height = 648.0
+
+[node name="Tanuki" type="Area2D"]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource("1_y4iyp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(27.0001, -151)
+scale = Vector2(0.36311, 0.36311)
+texture = ExtResource("2_xck8l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-11, -155)
+shape = SubResource("CapsuleShape2D_nvdg4")

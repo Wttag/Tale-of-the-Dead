@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://Code/Global.gd"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 [display]
 
@@ -32,6 +33,10 @@ window/stretch/aspect="expand"
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [input]
 
@@ -57,10 +62,19 @@ ui_up={
 ]
 }
 
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://Dialogue/Tanuki.dialogue", "res://Dialogue/Light_1.dialogue", "res://Dialogue/First.dialogue", "res://Dialogue/Second.dialogue")
+
 [layer_names]
 
 2d_render/layer_1="Player"
 2d_render/layer_2="World"
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Tilemap"
+2d_physics/layer_3="Background"
+2d_physics/layer_4="Collactibles"
+2d_physics/layer_5="Tanuki"
 
 [physics]
 

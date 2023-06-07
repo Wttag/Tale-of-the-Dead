@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=18 format=3 uid="uid://bkvkpvas18pqt"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -14,6 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://bjkllefbe64yf" path="res://Art/SVG/totd_logo_w.svg" id="7_jibxs"]
 [ext_resource type="PackedScene" uid="uid://btmoie57s0ypt" path="res://Code/AssetsScenes/fire.tscn" id="8_dpjyb"]
 [ext_resource type="Texture2D" uid="uid://b7y5u15xjtrrx" path="res://Art/SVG/Guide1White.svg" id="9_aealh"]
+[ext_resource type="PackedScene" uid="uid://kq6nblh02vbs" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
+[ext_resource type="Resource" uid="uid://du37yfkrcxtvh" path="res://Dialogue/First.dialogue" id="16_g8hva"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
 size = Vector2(35594, 628.5)
@@ -197,5 +199,9 @@ shape = SubResource("RectangleShape2D_djuvu")
 
 [node name="Fire1" parent="." instance=ExtResource("8_dpjyb")]
 position = Vector2(10997, -707)
+
+[node name="Tanuki" parent="." instance=ExtResource("15_rm51c")]
+position = Vector2(16069, -60)
+dialouge_resource = ExtResource("16_g8hva")
 
 [connection signal="body_entered" from="Fallzone" to="CharacterBody2D" method="_on_fallzone_body_entered"]

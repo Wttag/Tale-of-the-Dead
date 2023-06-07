@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var fire = 0
+var FLAME = 0
 const SPEED = 1000.0
 const JUMP_VELOCITY = -1000.0
 const DOUBLE_JUMP_VELOCITY = -1000.0
@@ -9,6 +9,7 @@ const DOUBLE_JUMP_VELOCITY = -1000.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animated_sprite = $AnimatedSprite2D
+@onready var dialogue_collision = $CollisionShape2D
 
 var can_double_jump = false
 
@@ -45,7 +46,6 @@ func _physics_process(delta):
 	
 		
 	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
@@ -60,14 +60,20 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 	move_and_slide()
-	
 
-
+#dialog
+func _unhandled_input(event: InputEvent):
+	if Input.is_action_just_pressed("ui_down"):
+		var Tanuki = dialogue_collision.get_overlapping_areas()
+		if Tanuki.size() > 0:
+			Tanuki[0].action()
+			return
 
 #deathzone 
 func _on_fallzone_body_entered(_CharacterBody2D):
 	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
 	
-func add_fire():
-	fire = fire + 1
-	print("Soul Count:", fire)
+#collectibles
+func add_flame():
+	FLAME = FLAME + 1
+	print("Soul Count:", FLAME)
