@@ -1,0 +1,60 @@
+[gd_scene load_steps=10 format=3 uid="uid://1nmui8g6tkdw"]
+
+[ext_resource type="Script" path="res://Code/AssetsScenes/ui.gd" id="1_k81sp"]
+[ext_resource type="Texture2D" uid="uid://dpeyqfpmfh0sm" path="res://Ui assets/World_UI/Name=Unmute, State=Default.png" id="1_omy11"]
+[ext_resource type="Texture2D" uid="uid://hxmq2fehvpv3" path="res://Ui assets/World_UI/Name=Mute, State=Pressed.png" id="2_a8afp"]
+[ext_resource type="Texture2D" uid="uid://chd74xey3wt3u" path="res://Ui assets/World_UI/Name=Options, State=Default.png" id="3_ohx74"]
+[ext_resource type="Texture2D" uid="uid://xlthituoo5yw" path="res://Ui assets/World_UI/Name=Options, State=Pressed.png" id="4_6sijd"]
+[ext_resource type="Texture2D" uid="uid://15nnrca1je4f" path="res://Ui assets/World_UI/Name=Options, State=Hover.png" id="5_0suwj"]
+[ext_resource type="Texture2D" uid="uid://beko4offyty1k" path="res://Ui assets/World_UI/Name=Quit, State=Default.png" id="6_sqyq7"]
+[ext_resource type="Texture2D" uid="uid://dnk3k6w7i133q" path="res://Ui assets/World_UI/Name=Unmute, State=Pressed.png" id="7_1wo1h"]
+[ext_resource type="Texture2D" uid="uid://b28c4pjox17vj" path="res://Ui assets/World_UI/Name=Quit, State=Hover.png" id="8_tdk7r"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_k81sp")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+light_mask = 512
+visibility_layer = 512
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 16
+
+[node name="Mute" type="TextureButton" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("1_omy11")
+texture_pressed = ExtResource("2_a8afp")
+
+[node name="Settings" type="TextureButton" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_ohx74")
+texture_pressed = ExtResource("4_6sijd")
+texture_hover = ExtResource("5_0suwj")
+
+[node name="Quit" type="TextureButton" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("6_sqyq7")
+texture_pressed = ExtResource("7_1wo1h")
+texture_hover = ExtResource("8_tdk7r")
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Mute" to="." method="_on_mute_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Quit" to="." method="_on_quit_pressed"]
