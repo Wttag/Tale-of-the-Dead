@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=19 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://btmoie57s0ypt" path="res://Code/AssetsScenes/fire.tscn" id="8_dpjyb"]
 [ext_resource type="Texture2D" uid="uid://b7y5u15xjtrrx" path="res://Art/SVG/Guide1White.svg" id="9_aealh"]
 [ext_resource type="PackedScene" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
+[ext_resource type="PackedScene" uid="uid://dake4hyshsoao" path="res://Code/options_menu.tscn" id="17_ump31"]
 [ext_resource type="PackedScene" uid="uid://hbu6qwalq4sm" path="res://Code/AssetsScenes/ui.tscn" id="17_w6d26"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
@@ -206,5 +207,8 @@ position = Vector2(16069, -60)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("17_w6d26")]
+
+[node name="Options Menu" parent="CanvasLayer" instance=ExtResource("17_ump31")]
+visible = false
 
 [connection signal="body_entered" from="Fallzone" to="CharacterBody2D" method="_on_fallzone_body_entered"]

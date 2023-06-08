@@ -3,7 +3,9 @@ extends Control
 
 #back Button: if open from play scene should go back there if opened from menu than there
 func _on_back_pressed():
-	DisplayServer.WINDOW_EVENT_GO_BACK_REQUEST
+	hide()
+#	DisplayServer.WINDOW_EVENT_GO_BACK_REQUEST
+#	print("yes going back")
 
 #Sound Setting
 func _on_master_value_changed(value):
