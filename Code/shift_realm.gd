@@ -1,6 +1,8 @@
 extends Node 
 @onready var player = $CharacterBody2D
 @onready var camera = $Camera2D
+@onready var lightmode = $"Light Mode"
+@onready var darkmode = $DarkMode
 var shift: bool = true
 signal realm_shifted
 
@@ -23,6 +25,9 @@ func set_checkpoint_position(pos: Vector2) -> void:
 func set_toggle():
 	shift = !shift
 	realm_shifted.emit()
+	print(shift, "shift")
+	lightmode.visible = !shift
+	darkmode.visible = shift
 
 #pause
 func _unhandled_input(event: InputEvent):
