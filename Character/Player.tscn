@@ -1,38 +1,12 @@
-[gd_scene load_steps=50 format=3 uid="uid://claxuc00jebt8"]
+[gd_scene load_steps=36 format=3 uid="uid://claxuc00jebt8"]
 
 [ext_resource type="Script" path="res://Character/Player.gd" id="1_y34h0"]
 [ext_resource type="Texture2D" uid="uid://b0ki5ge1idonp" path="res://Art/lights/light.png" id="2_2yblw"]
 [ext_resource type="Texture2D" uid="uid://diojubn5whxv1" path="res://Art/Character/Red/Fall.png" id="2_qt58s"]
 [ext_resource type="Texture2D" uid="uid://bu8p4woyvfmvt" path="res://Art/lights/PngItem_734497.png" id="2_xlbj6"]
 [ext_resource type="Texture2D" uid="uid://d30gq278vd3md" path="res://Art/Character/Red/Idle.png" id="3_e0rom"]
-[ext_resource type="Texture2D" uid="uid://fgqsalm2sfm7" path="res://Art/Character/Red/BlackDoubleJump (2).png" id="3_nym4t"]
 [ext_resource type="Texture2D" uid="uid://cbwn3fu6a3dkh" path="res://Art/Character/Red/Jump.png" id="4_hrd31"]
 [ext_resource type="Texture2D" uid="uid://oor4l6gs4o8" path="res://Art/Character/Red/Move.png" id="5_dxkjn"]
-[ext_resource type="Texture2D" uid="uid://dat2bd5f0ta66" path="res://Art/Character/Red/WhiteDoubleJump (1).png" id="8_8kxpl"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5snp0"]
-atlas = ExtResource("3_nym4t")
-region = Rect2(0, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5spd0"]
-atlas = ExtResource("3_nym4t")
-region = Rect2(350, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4m40u"]
-atlas = ExtResource("3_nym4t")
-region = Rect2(700, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pbobc"]
-atlas = ExtResource("3_nym4t")
-region = Rect2(1050, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6e03y"]
-atlas = ExtResource("3_nym4t")
-region = Rect2(1400, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1nohe"]
-atlas = ExtResource("3_nym4t")
-region = Rect2(1750, 0, 350, 300)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_62di3"]
 atlas = ExtResource("2_qt58s")
@@ -126,55 +100,8 @@ region = Rect2(900, 0, 300, 300)
 atlas = ExtResource("5_dxkjn")
 region = Rect2(1200, 0, 300, 300)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cclip"]
-atlas = ExtResource("8_8kxpl")
-region = Rect2(0, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_byr7l"]
-atlas = ExtResource("8_8kxpl")
-region = Rect2(350, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yctma"]
-atlas = ExtResource("8_8kxpl")
-region = Rect2(700, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hphv7"]
-atlas = ExtResource("8_8kxpl")
-region = Rect2(1050, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dnvte"]
-atlas = ExtResource("8_8kxpl")
-region = Rect2(1400, 0, 350, 300)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hpr07"]
-atlas = ExtResource("8_8kxpl")
-region = Rect2(1750, 0, 350, 300)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_10yhw"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5snp0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5spd0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4m40u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pbobc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6e03y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1nohe")
-}],
-"loop": false,
-"name": &"Black Double Jump",
-"speed": 10.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_62di3")
@@ -263,29 +190,6 @@ animations = [{
 "loop": true,
 "name": &"Run",
 "speed": 8.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cclip")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_byr7l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yctma")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hphv7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dnvte")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hpr07")
-}],
-"loop": false,
-"name": &"White Double Jump",
-"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l84vt"]
@@ -393,6 +297,8 @@ texture = ExtResource("2_2yblw")
 sprite_frames = SubResource("SpriteFrames_10yhw")
 animation = &"Idle"
 autoplay = "Idle"
+frame = 1
+frame_progress = 0.0867772
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-3, 40)

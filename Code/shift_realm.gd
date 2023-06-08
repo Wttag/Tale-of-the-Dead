@@ -25,7 +25,6 @@ func set_checkpoint_position(pos: Vector2) -> void:
 func set_toggle():
 	shift = !shift
 	realm_shifted.emit()
-	print(shift, "shift")
 	lightmode.visible = !shift
 	darkmode.visible = shift
 
