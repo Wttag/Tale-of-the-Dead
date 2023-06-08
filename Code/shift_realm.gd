@@ -1,11 +1,15 @@
 extends Node 
 @onready var player = $CharacterBody2D
+@onready var camera = $Camera2D
 var shift: bool = true
 signal realm_shifted
 
 func _ready():
+	camera.position_smoothing_enabled = false
 	set_character_position()
 	set_checkpoint_position(player.global_position)
+	await get_tree().create_timer(1).timeout
+	camera.position_smoothing_enabled = true
 	pass
 
 func set_character_position() -> void:
