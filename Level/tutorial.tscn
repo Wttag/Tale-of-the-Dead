@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=30 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -11,10 +11,21 @@
 [ext_resource type="Texture2D" uid="uid://8y8xtp5uih1p" path="res://Art/SVG/totd_logo_b.svg" id="4_t7x5t"]
 [ext_resource type="Texture2D" uid="uid://b6tusd8v83hj6" path="res://Art/SVG/Guide1Black.svg" id="5_506q1"]
 [ext_resource type="Texture2D" uid="uid://dolv8a76nty0i" path="res://Art/Envioment/Dark/Sun.png" id="5_u8svd"]
+[ext_resource type="Texture2D" uid="uid://dao4e3ux586wh" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 1.png" id="7_abc0k"]
 [ext_resource type="Texture2D" uid="uid://bjkllefbe64yf" path="res://Art/SVG/totd_logo_w.svg" id="7_jibxs"]
 [ext_resource type="PackedScene" uid="uid://btmoie57s0ypt" path="res://Code/AssetsScenes/fire.tscn" id="8_dpjyb"]
+[ext_resource type="Texture2D" uid="uid://se72xdfnp532" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 2.png" id="8_mfep4"]
 [ext_resource type="Texture2D" uid="uid://b7y5u15xjtrrx" path="res://Art/SVG/Guide1White.svg" id="9_aealh"]
-[ext_resource type="PackedScene" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
+[ext_resource type="Texture2D" uid="uid://c5ihbdta88c3v" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 3.png" id="9_hr1nx"]
+[ext_resource type="Texture2D" uid="uid://8wjt1nd10mf6" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 4.png" id="10_pluqt"]
+[ext_resource type="Texture2D" uid="uid://dk0ldiphctn5m" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 5.png" id="11_0djql"]
+[ext_resource type="Texture2D" uid="uid://ilrmar53g06b" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 6.png" id="12_555ad"]
+[ext_resource type="Texture2D" uid="uid://nfwd5gfhc7ly" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 7.png" id="13_n0sch"]
+[ext_resource type="Texture2D" uid="uid://ch8wvp164coco" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 8.png" id="14_17cmv"]
+[ext_resource type="Texture2D" uid="uid://b38o8lpxeo88s" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 9.png" id="15_ixw0f"]
+[ext_resource type="PackedScene" uid="uid://kq6nblh02vbs" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
+[ext_resource type="Texture2D" uid="uid://cxuctunpfe843" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 10.png" id="16_22a8q"]
+[ext_resource type="Texture2D" uid="uid://hj4mtivjrmpy" path="res://Art/Envioment/Dark/Background/Front/Front 1.png" id="17_g2hbp"]
 [ext_resource type="PackedScene" uid="uid://dake4hyshsoao" path="res://Code/options_menu.tscn" id="17_ump31"]
 [ext_resource type="PackedScene" uid="uid://hbu6qwalq4sm" path="res://Code/AssetsScenes/ui.tscn" id="17_w6d26"]
 
@@ -62,62 +73,54 @@ scale = Vector2(3, 3)
 texture = ExtResource("2_8rbel")
 centered = false
 
-[node name="Mountain3" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.92, 0.92)
-motion_offset = Vector2(30, 0)
-motion_mirroring = Vector2(5760, 0)
+[node name="Mountains" type="ParallaxLayer" parent="DarkMode"]
 
-[node name="Base" type="Sprite2D" parent="DarkMode/Mountain3"]
-position = Vector2(-8, -874)
-centered = false
+[node name="Mountain1" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(7256, -356)
+texture = ExtResource("7_abc0k")
 flip_h = true
 
-[node name="Mountain2" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.91, 0.91)
-motion_mirroring = Vector2(5760, 0)
+[node name="Mountain2" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(8306, -331)
+texture = ExtResource("8_mfep4")
 
-[node name="Base" type="Sprite2D" parent="DarkMode/Mountain2"]
-position = Vector2(-8, -664)
-centered = false
+[node name="Mountain3" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(12173, -166)
+texture = ExtResource("9_hr1nx")
 
-[node name="Mountain" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.9, 0.9)
-motion_mirroring = Vector2(5760, 0)
+[node name="Mountain4" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(16694, -388)
+texture = ExtResource("10_pluqt")
 
-[node name="Base" type="Sprite2D" parent="DarkMode/Mountain"]
-position = Vector2(-8, -631)
-centered = false
+[node name="Mountain5" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(15231, -512)
+texture = ExtResource("11_0djql")
 
-[node name="Trees 2" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.89, 1)
-motion_mirroring = Vector2(5760, 0)
+[node name="Mountain6" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(14303, -291)
+texture = ExtResource("12_555ad")
 
-[node name="Base" type="Sprite2D" parent="DarkMode/Trees 2"]
-position = Vector2(288, -2)
-centered = false
+[node name="Mountain7" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(6956, -653)
+texture = ExtResource("13_n0sch")
 
-[node name="Trees" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.88, 1)
-motion_mirroring = Vector2(5760, 0)
+[node name="Mountain8" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(16238, -301)
+texture = ExtResource("14_17cmv")
 
-[node name="Trees" type="Sprite2D" parent="DarkMode/Trees"]
-position = Vector2(-8, -36)
-centered = false
+[node name="Mountain9" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(11965.5, -506.5)
+texture = ExtResource("15_ixw0f")
 
-[node name="Water" type="ParallaxLayer" parent="DarkMode"]
-motion_mirroring = Vector2(5760, 0)
+[node name="Mountain10" type="Sprite2D" parent="DarkMode/Mountains"]
+position = Vector2(11544.5, -280.5)
+texture = ExtResource("16_22a8q")
 
-[node name="Trees" type="Sprite2D" parent="DarkMode/Water"]
-position = Vector2(-8, 220)
-centered = false
+[node name="Front" type="ParallaxLayer" parent="DarkMode"]
 
-[node name="Base" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.87, 1)
-motion_mirroring = Vector2(5760, 0)
-
-[node name="Base" type="Sprite2D" parent="DarkMode/Base"]
-position = Vector2(-8, 140)
-centered = false
+[node name="Front1" type="Sprite2D" parent="DarkMode/Front"]
+position = Vector2(9264, -1242)
+texture = ExtResource("17_g2hbp")
 
 [node name="UItext" type="ParallaxLayer" parent="DarkMode"]
 motion_scale = Vector2(0.95, 1)
