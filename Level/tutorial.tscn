@@ -23,7 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://nfwd5gfhc7ly" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 7.png" id="13_n0sch"]
 [ext_resource type="Texture2D" uid="uid://ch8wvp164coco" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 8.png" id="14_17cmv"]
 [ext_resource type="Texture2D" uid="uid://b38o8lpxeo88s" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 9.png" id="15_ixw0f"]
-[ext_resource type="PackedScene" uid="uid://kq6nblh02vbs" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
+[ext_resource type="PackedScene" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
 [ext_resource type="Texture2D" uid="uid://cxuctunpfe843" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 10.png" id="16_22a8q"]
 [ext_resource type="Texture2D" uid="uid://dua7rl1tqbsqu" path="res://Art/Envioment/Dark/Background/Mid/Mid 1.png" id="17_267fj"]
 [ext_resource type="Texture2D" uid="uid://hj4mtivjrmpy" path="res://Art/Envioment/Dark/Background/Front/Front 1.png" id="17_g2hbp"]

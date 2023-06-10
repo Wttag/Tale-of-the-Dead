@@ -10,8 +10,17 @@ const DOUBLE_JUMP_VELOCITY = -1000.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var dialogue_collision = $CollisionShape2D
+@onready var animation_tree = $AnimationTree
+@onready var state = $AnimationTree.get("parameters/playback")
+@onready var image = $Image
 
 var can_double_jump = false
+var shiftColor = "Black"
+
+func _ready():
+	animation_tree.active = true
+	pass
+
 
 func _input(event):
 	if event is InputEventKey:
@@ -19,19 +28,36 @@ func _input(event):
 			if event.is_pressed():
 				get_node("/root/Tutorial").set_toggle()
 
+func shift_images(state, dark):
+	var formattedString = "res://Art/Character/{color}/{color}{state}.png"
+	var actualString = formattedString.format({"color": dark, "state": state})
+	image.texture = load(actualString)
+	pass
+
+func set_shift(condition):
+	if condition: shiftColor = "Black"
+	else: shiftColor = "White"
+	
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		if(velocity.y <= 0):
-			animated_sprite.animation = "Jump"
+			if (can_double_jump): 
+				shift_images("Jump", shiftColor)
+				state.travel("Jump")
+			else:
+				shift_images("DoubleJump", shiftColor)
 		else:
-			animated_sprite.animation = "Fall"
+			shift_images("Fall", shiftColor)
+			state.travel("Fall")
 	else:
 		if(velocity.x == 0):
-			animated_sprite.animation = "Idle"
+			shift_images("Idle", shiftColor)
+			state.travel("Idle")
 		else:
-			animated_sprite.animation = "Run"
+			shift_images("Run", shiftColor)
+			state.travel("Run")
 		can_double_jump = true # reset double jump when on floor
 
 	# Handle Jump.
@@ -41,6 +67,7 @@ func _physics_process(delta):
 			can_double_jump = true
 		elif can_double_jump:
 			velocity.y = DOUBLE_JUMP_VELOCITY
+			state.travel("DoubleJump")
 			can_double_jump = false
 			
 	
@@ -51,10 +78,10 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 		
 		if(velocity.x < 0):
-			animated_sprite.flip_h = true
+			image.flip_h = true
 		
 		elif(velocity.x > 0):
-			animated_sprite.flip_h = false
+			image.flip_h = false
 			
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)

@@ -3,6 +3,9 @@ extends Node
 @onready var camera = $Camera2D
 @onready var lightmode = $"Light Mode"
 @onready var darkmode = $DarkMode
+@onready var pause_menu = $"CanvasLayer/Options Menu"
+
+
 var shift: bool = true
 signal realm_shifted
 
@@ -27,11 +30,12 @@ func set_toggle():
 	realm_shifted.emit()
 	lightmode.visible = !shift
 	darkmode.visible = shift
+	player.set_shift(shift)
 
 #pause
 func _unhandled_input(event: InputEvent):
 	if event.is_action_pressed("ui_cancel"):
-		$pause_menu.pause()
+		pause_menu.visible = !pause_menu.visible
 
 
 
