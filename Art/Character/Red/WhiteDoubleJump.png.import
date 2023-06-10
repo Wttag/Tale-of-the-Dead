@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fgqsalm2sfm7"
-path="res://.godot/imported/BlackDoubleJump (2).png-564befb77af4d63fc9599ab2ae1e832c.ctex"
+uid="uid://dat2bd5f0ta66"
+path="res://.godot/imported/WhiteDoubleJump.png-1ea5aa7e449d5291bc4bc98f8b66321e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Character/Red/BlackDoubleJump (2).png"
-dest_files=["res://.godot/imported/BlackDoubleJump (2).png-564befb77af4d63fc9599ab2ae1e832c.ctex"]
+source_file="res://Art/Character/Red/WhiteDoubleJump.png"
+dest_files=["res://.godot/imported/WhiteDoubleJump.png-1ea5aa7e449d5291bc4bc98f8b66321e.ctex"]
 
 [params]
 

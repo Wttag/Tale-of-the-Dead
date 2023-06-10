@@ -29,7 +29,7 @@ func _input(event):
 				get_node("/root/Tutorial").set_toggle()
 
 func shift_images(state, dark):
-	var formattedString = "res://Art/Character/{color}/{color}{state}.png"
+	var formattedString = "res://Art/Character/Red/{color}{state}.png"
 	var actualString = formattedString.format({"color": dark, "state": state})
 	image.texture = load(actualString)
 	pass
@@ -44,19 +44,19 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 		if(velocity.y <= 0):
 			if (can_double_jump): 
-				shift_images("Jump", shiftColor)
+#				shift_images("Jump", shiftColor)
 				state.travel("Jump")
 			else:
 				shift_images("DoubleJump", shiftColor)
 		else:
-			shift_images("Fall", shiftColor)
+#			shift_images("Fall", shiftColor)
 			state.travel("Fall")
 	else:
 		if(velocity.x == 0):
-			shift_images("Idle", shiftColor)
+#			shift_images("Idle", shiftColor)
 			state.travel("Idle")
 		else:
-			shift_images("Run", shiftColor)
+#			shift_images("Run", shiftColor)
 			state.travel("Run")
 		can_double_jump = true # reset double jump when on floor
 
