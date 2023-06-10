@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=64 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -6,39 +6,62 @@
 [ext_resource type="Texture2D" uid="uid://bbqljlnadq7r1" path="res://Art/Envioment/Dark/White_BG.svg" id="2_8rbel"]
 [ext_resource type="TileSet" uid="uid://b7as6gkeup2gg" path="res://Level/tilemap.tres" id="3_7o6i2"]
 [ext_resource type="PackedScene" uid="uid://bi2fu2rsnavx2" path="res://Code/AssetsScenes/checkpoint.tscn" id="3_duyg7"]
+[ext_resource type="Texture2D" uid="uid://bpiu76jkkfuk7" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 1.png" id="3_il55l"]
 [ext_resource type="Texture2D" uid="uid://to1ie8cmlbjk" path="res://Art/Envioment/Light/Moon.png" id="3_it31s"]
+[ext_resource type="Texture2D" uid="uid://ds6vpmvw24pgw" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 2.png" id="4_28otk"]
 [ext_resource type="Script" path="res://Code/level_1_layer.gd" id="4_iccr0"]
 [ext_resource type="Texture2D" uid="uid://8y8xtp5uih1p" path="res://Art/SVG/totd_logo_b.svg" id="4_t7x5t"]
-[ext_resource type="Texture2D" uid="uid://b6tusd8v83hj6" path="res://Art/SVG/Guide1Black.svg" id="5_506q1"]
+[ext_resource type="Texture2D" uid="uid://dmv14gaheos4j" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 5.png" id="5_nqi4o"]
 [ext_resource type="Texture2D" uid="uid://dolv8a76nty0i" path="res://Art/Envioment/Dark/Sun.png" id="5_u8svd"]
+[ext_resource type="Texture2D" uid="uid://ey73yk3c4m7v" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 7.png" id="6_ykpvy"]
 [ext_resource type="Texture2D" uid="uid://dao4e3ux586wh" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 1.png" id="7_abc0k"]
 [ext_resource type="Texture2D" uid="uid://bjkllefbe64yf" path="res://Art/SVG/totd_logo_w.svg" id="7_jibxs"]
+[ext_resource type="Texture2D" uid="uid://6b7pwbj2vxh8" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 9.png" id="7_ww401"]
 [ext_resource type="PackedScene" uid="uid://btmoie57s0ypt" path="res://Code/AssetsScenes/fire.tscn" id="8_dpjyb"]
 [ext_resource type="Texture2D" uid="uid://se72xdfnp532" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 2.png" id="8_mfep4"]
-[ext_resource type="Texture2D" uid="uid://b7y5u15xjtrrx" path="res://Art/SVG/Guide1White.svg" id="9_aealh"]
+[ext_resource type="Texture2D" uid="uid://c42dpddn56pgw" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 4.png" id="8_uey1y"]
+[ext_resource type="Texture2D" uid="uid://bedrhqgtq86gx" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 8.png" id="9_hhs4e"]
 [ext_resource type="Texture2D" uid="uid://c5ihbdta88c3v" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 3.png" id="9_hr1nx"]
 [ext_resource type="Texture2D" uid="uid://8wjt1nd10mf6" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 4.png" id="10_pluqt"]
+[ext_resource type="Texture2D" uid="uid://wi1cmlhtxljk" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 10.png" id="10_v5d6g"]
 [ext_resource type="Texture2D" uid="uid://dk0ldiphctn5m" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 5.png" id="11_0djql"]
+[ext_resource type="Texture2D" uid="uid://bdvb5j1cqvaqe" path="res://Art/Envioment/Light/Mountains/Mountain/Mountain 3.png" id="11_fw0y4"]
 [ext_resource type="Texture2D" uid="uid://ilrmar53g06b" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 6.png" id="12_555ad"]
+[ext_resource type="Texture2D" uid="uid://cvtf02471wfxl" path="res://Art/Envioment/Light/Mountains/Mid/Mid 1.png" id="12_ro4mq"]
+[ext_resource type="Texture2D" uid="uid://c34hc3k3hg2he" path="res://Art/Envioment/Light/Mountains/Mid/Mid 2.png" id="13_6svh0"]
 [ext_resource type="Texture2D" uid="uid://nfwd5gfhc7ly" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 7.png" id="13_n0sch"]
 [ext_resource type="Texture2D" uid="uid://ch8wvp164coco" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 8.png" id="14_17cmv"]
+[ext_resource type="Texture2D" uid="uid://cjicvq17jjrvu" path="res://Art/Envioment/Light/Mountains/Mid/Mid 3.png" id="14_kkh3a"]
 [ext_resource type="Texture2D" uid="uid://b38o8lpxeo88s" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 9.png" id="15_ixw0f"]
-[ext_resource type="PackedScene" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
+[ext_resource type="Texture2D" uid="uid://cw6a2ts82wr8c" path="res://Art/Envioment/Light/Mountains/Mid/Mid 4.png" id="15_jiypc"]
+[ext_resource type="PackedScene" uid="uid://kq6nblh02vbs" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
 [ext_resource type="Texture2D" uid="uid://cxuctunpfe843" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 10.png" id="16_22a8q"]
+[ext_resource type="Texture2D" uid="uid://dgvp33rscqkpb" path="res://Art/Envioment/Light/Mountains/Mid/Mid 5.png" id="16_s3b3j"]
 [ext_resource type="Texture2D" uid="uid://dua7rl1tqbsqu" path="res://Art/Envioment/Dark/Background/Mid/Mid 1.png" id="17_267fj"]
 [ext_resource type="Texture2D" uid="uid://hj4mtivjrmpy" path="res://Art/Envioment/Dark/Background/Front/Front 1.png" id="17_g2hbp"]
+[ext_resource type="Texture2D" uid="uid://f57ejav12tcn" path="res://Art/Envioment/Light/Mountains/Front/Front 2.png" id="17_kktrr"]
 [ext_resource type="PackedScene" uid="uid://dake4hyshsoao" path="res://Code/options_menu.tscn" id="17_ump31"]
 [ext_resource type="PackedScene" uid="uid://hbu6qwalq4sm" path="res://Code/AssetsScenes/ui.tscn" id="17_w6d26"]
 [ext_resource type="Texture2D" uid="uid://b34nqvilitbaw" path="res://Art/Envioment/Dark/Background/Mid/Mid 2.png" id="18_8qgqe"]
+[ext_resource type="Texture2D" uid="uid://d0r5bvhv5rxi7" path="res://Art/Envioment/Light/Mountains/Front/Front 4.png" id="18_yfhlr"]
 [ext_resource type="Texture2D" uid="uid://bi04u5m3u0ig6" path="res://Art/Envioment/Dark/Background/Mid/Mid 3.png" id="19_5tk24"]
+[ext_resource type="Texture2D" uid="uid://cd1na5jcb3rx8" path="res://Art/Envioment/Light/Mountains/Front/Front 5.png" id="19_o12uv"]
 [ext_resource type="Texture2D" uid="uid://cf62qc6vlul3j" path="res://Art/Envioment/Dark/Background/Mid/Mid 4.png" id="20_iwar5"]
+[ext_resource type="Texture2D" uid="uid://bw3uxalxiit0r" path="res://Art/Envioment/Light/Mountains/Front/Front 6.png" id="20_raanq"]
 [ext_resource type="Texture2D" uid="uid://coumt38brcdfx" path="res://Art/Envioment/Dark/Background/Mid/Mid 5.png" id="21_h0nmy"]
+[ext_resource type="Texture2D" uid="uid://c2ii8q35tmcjr" path="res://Art/Envioment/Light/Mountains/Front/Front 7.png" id="21_m7xoe"]
+[ext_resource type="Texture2D" uid="uid://t3t1wxmkdqfu" path="res://Art/Envioment/Light/Mountains/Building/Building 1.png" id="22_q3yyd"]
 [ext_resource type="Texture2D" uid="uid://dmiit8uwb53ub" path="res://Art/Envioment/Dark/Background/Front/Front 2.png" id="23_71vo5"]
+[ext_resource type="Texture2D" uid="uid://cwlhs0hqbfdbr" path="res://Art/Envioment/Light/Mountains/Building/Building 2.png" id="23_yw4g7"]
 [ext_resource type="Texture2D" uid="uid://kmpu6wy6r3ew" path="res://Art/Envioment/Dark/Background/Front/Front 3.png" id="24_36jfp"]
+[ext_resource type="Texture2D" uid="uid://clhdane8kpipd" path="res://Art/Envioment/Light/Mountains/Front/Front 1.png" id="24_l18u2"]
 [ext_resource type="Texture2D" uid="uid://cik2vri2qht6r" path="res://Art/Envioment/Dark/Background/Front/Front 4.png" id="25_g4xn1"]
+[ext_resource type="Texture2D" uid="uid://cm807knt8vk4s" path="res://Art/Envioment/Light/Mountains/Front/Front 3.png" id="25_v4uoy"]
 [ext_resource type="Texture2D" uid="uid://dpstkhneoibv5" path="res://Art/Envioment/Dark/Background/Front/Front 5.png" id="26_5n7mw"]
+[ext_resource type="Texture2D" uid="uid://cs51fc0phn6j8" path="res://Art/Envioment/Dark/Background/Building/Building 1.png" id="27_310c2"]
 [ext_resource type="Texture2D" uid="uid://cssu023do8571" path="res://Art/Envioment/Dark/Background/Front/Front 6.png" id="27_l8rkp"]
 [ext_resource type="Texture2D" uid="uid://c6ijqqah61a8n" path="res://Art/Envioment/Dark/Background/Front/Front 7.png" id="28_24m7n"]
+[ext_resource type="Texture2D" uid="uid://smj4vib3iiub" path="res://Art/Envioment/Dark/Background/Building/Building 2.png" id="28_h0qw2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
 size = Vector2(35594, 628.5)
@@ -48,8 +71,13 @@ light_mask = 2
 visibility_layer = 2
 script = ExtResource("1_v1w1j")
 
+[node name="Water" type="ColorRect" parent="."]
+offset_top = 192.0
+offset_right = 35652.0
+offset_bottom = 604.0
+color = Color(0.364706, 0.0705882, 0.00784314, 1)
+
 [node name="Light Mode" type="ParallaxBackground" parent="."]
-visible = false
 
 [node name="BlackBG" type="ParallaxLayer" parent="Light Mode"]
 motion_mirroring = Vector2(3840, 2160)
@@ -59,20 +87,321 @@ scale = Vector2(3, 3)
 texture = ExtResource("2_7ktla")
 centered = false
 
-[node name="UItext" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.95, 1)
+[node name="Moon" type="ParallaxLayer" parent="Light Mode"]
 
-[node name="Moon" type="Sprite2D" parent="Light Mode/UItext"]
-position = Vector2(14565.5, -1127)
+[node name="Moon" type="Sprite2D" parent="Light Mode/Moon"]
+position = Vector2(14944, -1223)
 texture = ExtResource("3_it31s")
 
-[node name="Logo" type="Sprite2D" parent="Light Mode/UItext"]
-position = Vector2(7779, -833)
-texture = ExtResource("4_t7x5t")
+[node name="Mountain Big" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.99, 0.99)
+motion_mirroring = Vector2(20000, 0)
 
-[node name="Guide" type="Sprite2D" parent="Light Mode/UItext"]
-position = Vector2(2805.5, -612)
-texture = ExtResource("5_506q1")
+[node name="Mountain1" type="Sprite2D" parent="Light Mode/Mountain Big"]
+position = Vector2(5376.5, -1022)
+texture = ExtResource("3_il55l")
+flip_h = true
+
+[node name="Mountain2" type="Sprite2D" parent="Light Mode/Mountain Big"]
+position = Vector2(1367.5, -1094.5)
+texture = ExtResource("4_28otk")
+
+[node name="Mountain5" type="Sprite2D" parent="Light Mode/Mountain Big"]
+position = Vector2(15123, -869)
+texture = ExtResource("5_nqi4o")
+
+[node name="Mountain7" type="Sprite2D" parent="Light Mode/Mountain Big"]
+position = Vector2(7365.5, -945)
+texture = ExtResource("6_ykpvy")
+
+[node name="Mountain9" type="Sprite2D" parent="Light Mode/Mountain Big"]
+position = Vector2(10901, -846)
+texture = ExtResource("7_ww401")
+
+[node name="Mountain Mid" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.98, 0.98)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Mountain1" type="Sprite2D" parent="Light Mode/Mountain Mid"]
+position = Vector2(7612.5, -560)
+texture = ExtResource("3_il55l")
+flip_h = true
+
+[node name="Mountain2" type="Sprite2D" parent="Light Mode/Mountain Mid"]
+position = Vector2(8772.5, -568)
+texture = ExtResource("4_28otk")
+
+[node name="Mountain3" type="Sprite2D" parent="Light Mode/Mountain Mid"]
+position = Vector2(18271, -518)
+texture = ExtResource("8_uey1y")
+
+[node name="Mountain4" type="Sprite2D" parent="Light Mode/Mountain Mid"]
+position = Vector2(1726, -874)
+texture = ExtResource("6_ykpvy")
+
+[node name="Mountain5" type="Sprite2D" parent="Light Mode/Mountain Mid"]
+position = Vector2(13969, -673)
+texture = ExtResource("9_hhs4e")
+flip_h = true
+
+[node name="Mountain7" type="Sprite2D" parent="Light Mode/Mountain Mid"]
+position = Vector2(10103, -503)
+texture = ExtResource("10_v5d6g")
+
+[node name="Mountain8" type="Sprite2D" parent="Light Mode/Mountain Mid"]
+position = Vector2(16032, -703)
+texture = ExtResource("10_v5d6g")
+flip_h = true
+
+[node name="Mountain small" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.97, 0.97)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Mountain1" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(750.5, -608.5)
+texture = ExtResource("3_il55l")
+flip_h = true
+
+[node name="Mountain2" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(5054.5, -767)
+texture = ExtResource("4_28otk")
+
+[node name="Mountain3" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(16590, -426)
+texture = ExtResource("11_fw0y4")
+
+[node name="Mountain4" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(13215, -441)
+texture = ExtResource("8_uey1y")
+
+[node name="Mountain5" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(12413, -242)
+texture = ExtResource("11_fw0y4")
+
+[node name="Mountain6" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(17419, -382)
+texture = ExtResource("8_uey1y")
+flip_h = true
+
+[node name="Mountain7" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(9053, -991)
+texture = ExtResource("6_ykpvy")
+flip_h = true
+
+[node name="Mountain8" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(11448, -521)
+texture = ExtResource("9_hhs4e")
+flip_h = true
+
+[node name="Mountain9" type="Sprite2D" parent="Light Mode/Mountain small"]
+position = Vector2(19409, -233)
+texture = ExtResource("11_fw0y4")
+flip_h = true
+
+[node name="Mid" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.96, 0.96)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Mid 1" type="Sprite2D" parent="Light Mode/Mid"]
+position = Vector2(8353, -188)
+texture = ExtResource("12_ro4mq")
+
+[node name="Mid 2" type="Sprite2D" parent="Light Mode/Mid"]
+position = Vector2(5792, -137)
+texture = ExtResource("13_6svh0")
+
+[node name="Mid 3" type="Sprite2D" parent="Light Mode/Mid"]
+position = Vector2(13400, -198)
+texture = ExtResource("14_kkh3a")
+
+[node name="Mid 4" type="Sprite2D" parent="Light Mode/Mid"]
+position = Vector2(9668, -131)
+rotation = 0.0174533
+texture = ExtResource("13_6svh0")
+
+[node name="Mid 6" type="Sprite2D" parent="Light Mode/Mid"]
+position = Vector2(18651, -147)
+texture = ExtResource("14_kkh3a")
+
+[node name="Mid 5" type="Sprite2D" parent="Light Mode/Mid"]
+position = Vector2(11840, -128)
+texture = ExtResource("14_kkh3a")
+flip_h = true
+
+[node name="Mid2" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.95, 0.95)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Mid 2" type="Sprite2D" parent="Light Mode/Mid2"]
+position = Vector2(12922, -54)
+texture = ExtResource("13_6svh0")
+
+[node name="Mid 3" type="Sprite2D" parent="Light Mode/Mid2"]
+position = Vector2(16045, -174)
+texture = ExtResource("14_kkh3a")
+
+[node name="Mid 4" type="Sprite2D" parent="Light Mode/Mid2"]
+position = Vector2(6598, -35)
+texture = ExtResource("14_kkh3a")
+
+[node name="Mid 5" type="Sprite2D" parent="Light Mode/Mid2"]
+position = Vector2(605, -19)
+texture = ExtResource("14_kkh3a")
+flip_h = true
+
+[node name="Mid 6" type="Sprite2D" parent="Light Mode/Mid2"]
+position = Vector2(4438, -28)
+texture = ExtResource("13_6svh0")
+
+[node name="Mid 7" type="Sprite2D" parent="Light Mode/Mid2"]
+position = Vector2(16803, -29)
+texture = ExtResource("13_6svh0")
+flip_h = true
+
+[node name="Mid_water" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.94, 0.94)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Mid 4" type="Sprite2D" parent="Light Mode/Mid_water"]
+position = Vector2(2941, -516)
+texture = ExtResource("15_jiypc")
+flip_h = true
+
+[node name="Mid 5" type="Sprite2D" parent="Light Mode/Mid_water"]
+position = Vector2(14510, -347.5)
+texture = ExtResource("16_s3b3j")
+
+[node name="Front" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.93, 0.93)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Front1" type="Sprite2D" parent="Light Mode/Front"]
+position = Vector2(7970, -106)
+texture = ExtResource("17_kktrr")
+
+[node name="Front2" type="Sprite2D" parent="Light Mode/Front"]
+position = Vector2(10819, -315)
+texture = ExtResource("18_yfhlr")
+flip_h = true
+
+[node name="Front3" type="Sprite2D" parent="Light Mode/Front"]
+position = Vector2(2722, -186)
+texture = ExtResource("19_o12uv")
+
+[node name="Front4" type="Sprite2D" parent="Light Mode/Front"]
+position = Vector2(3531, -197)
+texture = ExtResource("20_raanq")
+
+[node name="Front5" type="Sprite2D" parent="Light Mode/Front"]
+position = Vector2(14424, -255.5)
+texture = ExtResource("21_m7xoe")
+
+[node name="Front6" type="Sprite2D" parent="Light Mode/Front"]
+position = Vector2(17856, -10)
+texture = ExtResource("20_raanq")
+
+[node name="Front2" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.93, 0.93)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Building1" type="Sprite2D" parent="Light Mode/Front2"]
+position = Vector2(13913, -329)
+texture = ExtResource("22_q3yyd")
+flip_h = true
+
+[node name="Building2" type="Sprite2D" parent="Light Mode/Front2"]
+position = Vector2(1743, -189)
+texture = ExtResource("23_yw4g7")
+flip_h = true
+
+[node name="Front1" type="Sprite2D" parent="Light Mode/Front2"]
+position = Vector2(2995, -15)
+texture = ExtResource("17_kktrr")
+flip_h = true
+
+[node name="Front2" type="Sprite2D" parent="Light Mode/Front2"]
+position = Vector2(15125, -237)
+texture = ExtResource("18_yfhlr")
+
+[node name="Front3" type="Sprite2D" parent="Light Mode/Front2"]
+position = Vector2(1467, -112)
+texture = ExtResource("19_o12uv")
+flip_h = true
+
+[node name="Front4" type="Sprite2D" parent="Light Mode/Front2"]
+position = Vector2(13809, -134)
+texture = ExtResource("20_raanq")
+flip_h = true
+
+[node name="Front5" type="Sprite2D" parent="Light Mode/Front2"]
+position = Vector2(2028, -83.5)
+texture = ExtResource("21_m7xoe")
+flip_h = true
+
+[node name="Front3" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.91, 0.91)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Front1" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(7620, 62)
+texture = ExtResource("24_l18u2")
+
+[node name="Front2" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(14392, 73)
+texture = ExtResource("17_kktrr")
+
+[node name="Front3" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(3005, 91)
+rotation = 0.0174533
+texture = ExtResource("25_v4uoy")
+
+[node name="Front4" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(4946, 87)
+texture = ExtResource("17_kktrr")
+flip_h = true
+
+[node name="Front5" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(10116, 53)
+texture = ExtResource("17_kktrr")
+
+[node name="Front6" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(11420, 45)
+rotation = -0.0174533
+texture = ExtResource("25_v4uoy")
+flip_h = true
+
+[node name="Front7" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(849, 102)
+texture = ExtResource("17_kktrr")
+flip_h = true
+
+[node name="Front8" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(12788, 46)
+rotation = -0.0174533
+texture = ExtResource("24_l18u2")
+
+[node name="Front9" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(16420, 61)
+rotation = -0.0174533
+texture = ExtResource("25_v4uoy")
+
+[node name="Front10" type="Sprite2D" parent="Light Mode/Front3"]
+position = Vector2(18991, 71)
+texture = ExtResource("17_kktrr")
+flip_h = true
+
+[node name="UItext" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.99, 0.99)
+
+[node name="ColorRect2" type="ColorRect" parent="Light Mode/UItext"]
+offset_top = -1561.0
+offset_right = 6020.0
+offset_bottom = 612.0
+color = Color(0, 0, 0, 1)
+
+[node name="Logo" type="Sprite2D" parent="Light Mode/UItext"]
+position = Vector2(8207, -833)
+texture = ExtResource("4_t7x5t")
 
 [node name="DarkMode" type="ParallaxBackground" parent="."]
 
@@ -84,15 +413,9 @@ scale = Vector2(3, 3)
 texture = ExtResource("2_8rbel")
 centered = false
 
-[node name="Water" type="ParallaxLayer" parent="DarkMode"]
+[node name="Sun" type="ParallaxLayer" parent="DarkMode"]
 
-[node name="Water" type="ColorRect" parent="DarkMode/Water"]
-offset_top = 192.0
-offset_right = 35652.0
-offset_bottom = 604.0
-color = Color(0.364706, 0.0705882, 0.00784314, 1)
-
-[node name="Sun" type="Sprite2D" parent="DarkMode/Water"]
+[node name="Sun" type="Sprite2D" parent="DarkMode/Sun"]
 position = Vector2(15189, -1222)
 texture = ExtResource("5_u8svd")
 
@@ -173,18 +496,13 @@ texture = ExtResource("8_mfep4")
 position = Vector2(16590, -426)
 texture = ExtResource("9_hr1nx")
 
-[node name="Mountain5" type="Sprite2D" parent="DarkMode/Mountain small"]
-position = Vector2(12413, -242)
-texture = ExtResource("9_hr1nx")
-
-[node name="Mountain9" type="Sprite2D" parent="DarkMode/Mountain small"]
-position = Vector2(19409, -233)
-texture = ExtResource("9_hr1nx")
-flip_h = true
-
 [node name="Mountain4" type="Sprite2D" parent="DarkMode/Mountain small"]
 position = Vector2(13215, -441)
 texture = ExtResource("10_pluqt")
+
+[node name="Mountain5" type="Sprite2D" parent="DarkMode/Mountain small"]
+position = Vector2(12413, -242)
+texture = ExtResource("9_hr1nx")
 
 [node name="Mountain6" type="Sprite2D" parent="DarkMode/Mountain small"]
 position = Vector2(17419, -382)
@@ -201,6 +519,11 @@ position = Vector2(11448, -521)
 texture = ExtResource("14_17cmv")
 flip_h = true
 
+[node name="Mountain9" type="Sprite2D" parent="DarkMode/Mountain small"]
+position = Vector2(19409, -233)
+texture = ExtResource("9_hr1nx")
+flip_h = true
+
 [node name="Mid" type="ParallaxLayer" parent="DarkMode"]
 motion_scale = Vector2(0.96, 0.96)
 motion_mirroring = Vector2(20000, 0)
@@ -213,23 +536,23 @@ texture = ExtResource("17_267fj")
 position = Vector2(5792, -137)
 texture = ExtResource("18_8qgqe")
 
+[node name="Mid 3" type="Sprite2D" parent="DarkMode/Mid"]
+position = Vector2(13400, -198)
+texture = ExtResource("19_5tk24")
+
 [node name="Mid 4" type="Sprite2D" parent="DarkMode/Mid"]
 position = Vector2(9668, -131)
 rotation = 0.0174533
 texture = ExtResource("18_8qgqe")
 
-[node name="Mid 3" type="Sprite2D" parent="DarkMode/Mid"]
-position = Vector2(13400, -198)
-texture = ExtResource("19_5tk24")
-
-[node name="Mid 6" type="Sprite2D" parent="DarkMode/Mid"]
-position = Vector2(18651, -147)
-texture = ExtResource("19_5tk24")
-
 [node name="Mid 5" type="Sprite2D" parent="DarkMode/Mid"]
 position = Vector2(11840, -128)
 texture = ExtResource("19_5tk24")
 flip_h = true
+
+[node name="Mid 6" type="Sprite2D" parent="DarkMode/Mid"]
+position = Vector2(18651, -147)
+texture = ExtResource("19_5tk24")
 
 [node name="Mid2" type="ParallaxLayer" parent="DarkMode"]
 motion_scale = Vector2(0.95, 0.95)
@@ -244,15 +567,6 @@ texture = ExtResource("17_267fj")
 position = Vector2(12922, -54)
 texture = ExtResource("18_8qgqe")
 
-[node name="Mid 7" type="Sprite2D" parent="DarkMode/Mid2"]
-position = Vector2(16803, -29)
-texture = ExtResource("18_8qgqe")
-flip_h = true
-
-[node name="Mid 6" type="Sprite2D" parent="DarkMode/Mid2"]
-position = Vector2(4438, -28)
-texture = ExtResource("18_8qgqe")
-
 [node name="Mid 3" type="Sprite2D" parent="DarkMode/Mid2"]
 position = Vector2(16045, -174)
 texture = ExtResource("19_5tk24")
@@ -264,6 +578,15 @@ texture = ExtResource("19_5tk24")
 [node name="Mid 5" type="Sprite2D" parent="DarkMode/Mid2"]
 position = Vector2(605, -19)
 texture = ExtResource("19_5tk24")
+flip_h = true
+
+[node name="Mid 6" type="Sprite2D" parent="DarkMode/Mid2"]
+position = Vector2(4438, -28)
+texture = ExtResource("18_8qgqe")
+
+[node name="Mid 7" type="Sprite2D" parent="DarkMode/Mid2"]
+position = Vector2(16803, -29)
+texture = ExtResource("18_8qgqe")
 flip_h = true
 
 [node name="Mid_water" type="ParallaxLayer" parent="DarkMode"]
@@ -300,17 +623,27 @@ texture = ExtResource("26_5n7mw")
 position = Vector2(3531, -197)
 texture = ExtResource("27_l8rkp")
 
-[node name="Front6" type="Sprite2D" parent="DarkMode/Front"]
-position = Vector2(17856, -10)
-texture = ExtResource("27_l8rkp")
-
 [node name="Front5" type="Sprite2D" parent="DarkMode/Front"]
 position = Vector2(14424, -255.5)
 texture = ExtResource("28_24m7n")
 
+[node name="Front6" type="Sprite2D" parent="DarkMode/Front"]
+position = Vector2(17856, -10)
+texture = ExtResource("27_l8rkp")
+
 [node name="Front2" type="ParallaxLayer" parent="DarkMode"]
 motion_scale = Vector2(0.93, 0.93)
 motion_mirroring = Vector2(20000, 0)
+
+[node name="Building1" type="Sprite2D" parent="DarkMode/Front2"]
+position = Vector2(13913, -329)
+texture = ExtResource("27_310c2")
+flip_h = true
+
+[node name="Building2" type="Sprite2D" parent="DarkMode/Front2"]
+position = Vector2(1743, -189)
+texture = ExtResource("28_h0qw2")
+flip_h = true
 
 [node name="Front1" type="Sprite2D" parent="DarkMode/Front2"]
 position = Vector2(2995, -15)
@@ -344,28 +677,23 @@ motion_mirroring = Vector2(20000, 0)
 position = Vector2(7620, 62)
 texture = ExtResource("17_g2hbp")
 
-[node name="Front8" type="Sprite2D" parent="DarkMode/Front3"]
-position = Vector2(12788, 46)
-rotation = -0.0174533
-texture = ExtResource("17_g2hbp")
-
 [node name="Front2" type="Sprite2D" parent="DarkMode/Front3"]
 position = Vector2(14392, 73)
 texture = ExtResource("23_71vo5")
-
-[node name="Front5" type="Sprite2D" parent="DarkMode/Front3"]
-position = Vector2(10116, 53)
-texture = ExtResource("23_71vo5")
-
-[node name="Front7" type="Sprite2D" parent="DarkMode/Front3"]
-position = Vector2(849, 102)
-texture = ExtResource("23_71vo5")
-flip_h = true
 
 [node name="Front3" type="Sprite2D" parent="DarkMode/Front3"]
 position = Vector2(3005, 91)
 rotation = 0.0174533
 texture = ExtResource("24_36jfp")
+
+[node name="Front4" type="Sprite2D" parent="DarkMode/Front3"]
+position = Vector2(4946, 87)
+texture = ExtResource("23_71vo5")
+flip_h = true
+
+[node name="Front5" type="Sprite2D" parent="DarkMode/Front3"]
+position = Vector2(10116, 53)
+texture = ExtResource("23_71vo5")
 
 [node name="Front6" type="Sprite2D" parent="DarkMode/Front3"]
 position = Vector2(11420, 45)
@@ -373,15 +701,20 @@ rotation = -0.0174533
 texture = ExtResource("24_36jfp")
 flip_h = true
 
+[node name="Front7" type="Sprite2D" parent="DarkMode/Front3"]
+position = Vector2(849, 102)
+texture = ExtResource("23_71vo5")
+flip_h = true
+
+[node name="Front8" type="Sprite2D" parent="DarkMode/Front3"]
+position = Vector2(12788, 46)
+rotation = -0.0174533
+texture = ExtResource("17_g2hbp")
+
 [node name="Front9" type="Sprite2D" parent="DarkMode/Front3"]
 position = Vector2(16420, 61)
 rotation = -0.0174533
 texture = ExtResource("24_36jfp")
-
-[node name="Front4" type="Sprite2D" parent="DarkMode/Front3"]
-position = Vector2(4946, 87)
-texture = ExtResource("23_71vo5")
-flip_h = true
 
 [node name="Front10" type="Sprite2D" parent="DarkMode/Front3"]
 position = Vector2(18991, 71)
@@ -400,11 +733,6 @@ color = Color(0, 0, 0, 1)
 [node name="Logo" type="Sprite2D" parent="DarkMode/UItext"]
 position = Vector2(8207, -833)
 texture = ExtResource("7_jibxs")
-
-[node name="Guide" type="Sprite2D" parent="DarkMode/UItext"]
-visible = false
-position = Vector2(2805.5, -612)
-texture = ExtResource("9_aealh")
 
 [node name="Checkpoint" parent="." instance=ExtResource("3_duyg7")]
 position = Vector2(24477, -228)
