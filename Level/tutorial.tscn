@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=65 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://cjicvq17jjrvu" path="res://Art/Envioment/Light/Mountains/Mid/Mid 3.png" id="14_kkh3a"]
 [ext_resource type="Texture2D" uid="uid://b38o8lpxeo88s" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 9.png" id="15_ixw0f"]
 [ext_resource type="Texture2D" uid="uid://cw6a2ts82wr8c" path="res://Art/Envioment/Light/Mountains/Mid/Mid 4.png" id="15_jiypc"]
-[ext_resource type="PackedScene" uid="uid://kq6nblh02vbs" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
+[ext_resource type="PackedScene" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
 [ext_resource type="Texture2D" uid="uid://cxuctunpfe843" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 10.png" id="16_22a8q"]
 [ext_resource type="Texture2D" uid="uid://dgvp33rscqkpb" path="res://Art/Envioment/Light/Mountains/Mid/Mid 5.png" id="16_s3b3j"]
 [ext_resource type="Texture2D" uid="uid://dua7rl1tqbsqu" path="res://Art/Envioment/Dark/Background/Mid/Mid 1.png" id="17_267fj"]
@@ -62,6 +62,7 @@
 [ext_resource type="Texture2D" uid="uid://cssu023do8571" path="res://Art/Envioment/Dark/Background/Front/Front 6.png" id="27_l8rkp"]
 [ext_resource type="Texture2D" uid="uid://c6ijqqah61a8n" path="res://Art/Envioment/Dark/Background/Front/Front 7.png" id="28_24m7n"]
 [ext_resource type="Texture2D" uid="uid://smj4vib3iiub" path="res://Art/Envioment/Dark/Background/Building/Building 2.png" id="28_h0qw2"]
+[ext_resource type="PackedScene" uid="uid://bhtmvokeg1xpu" path="res://Code/AssetsScenes/popup.tscn" id="63_4xap7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
 size = Vector2(35594, 628.5)
@@ -810,5 +811,8 @@ position = Vector2(16069, -60)
 
 [node name="Options Menu" parent="CanvasLayer" instance=ExtResource("17_ump31")]
 visible = false
+
+[node name="PopUp" parent="CanvasLayer" instance=ExtResource("63_4xap7")]
+type = "LevelScene"
 
 [connection signal="body_entered" from="Fallzone" to="CharacterBody2D" method="_on_fallzone_body_entered"]
