@@ -12,11 +12,10 @@ func set_text():
 		"HomeScene":
 			title.text = "Quit Game"
 			description.text = "Are you sure you want to quit 
-								the game? Your progress will 
-								be lost."
+								the game?"
 			pass
 		"LevelScene":
-			title.text = "Quit Level"
+			title.text = "Quit Game"
 			description.text = "If you quit all current progress will be lost forever. Are you sure you want to quit?"
 			pass
 	
