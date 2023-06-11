@@ -164,5 +164,8 @@ libraries = {
 "": SubResource("AnimationLibrary_aq512")
 }
 
+[node name="Sound_Collect" type="AudioStreamPlayer2D" parent="."]
+bus = &"Sounds"
+
 [connection signal="body_entered" from="." to="." method="fire_on_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

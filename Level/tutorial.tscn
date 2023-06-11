@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=67 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -62,6 +62,8 @@
 [ext_resource type="Texture2D" uid="uid://cssu023do8571" path="res://Art/Envioment/Dark/Background/Front/Front 6.png" id="27_l8rkp"]
 [ext_resource type="Texture2D" uid="uid://c6ijqqah61a8n" path="res://Art/Envioment/Dark/Background/Front/Front 7.png" id="28_24m7n"]
 [ext_resource type="Texture2D" uid="uid://smj4vib3iiub" path="res://Art/Envioment/Dark/Background/Building/Building 2.png" id="28_h0qw2"]
+[ext_resource type="AudioStream" uid="uid://dx4patar7yycy" path="res://Music/Light_Music.ogg" id="28_xtak1"]
+[ext_resource type="AudioStream" uid="uid://dabxw3wtgpyj0" path="res://Music/Music_Dark.ogg" id="55_ynffk"]
 [ext_resource type="PackedScene" uid="uid://bhtmvokeg1xpu" path="res://Code/AssetsScenes/popup.tscn" id="63_4xap7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
@@ -71,6 +73,16 @@ size = Vector2(35594, 628.5)
 light_mask = 2
 visibility_layer = 2
 script = ExtResource("1_v1w1j")
+
+[node name="Music_Light" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("28_xtak1")
+autoplay = true
+bus = &"Music"
+
+[node name="Music_Dark" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("55_ynffk")
+autoplay = true
+bus = &"Music"
 
 [node name="Water" type="ColorRect" parent="."]
 visible = false

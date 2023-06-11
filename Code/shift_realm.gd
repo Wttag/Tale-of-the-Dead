@@ -31,11 +31,7 @@ func set_toggle():
 	lightmode.visible = !shift
 	darkmode.visible = shift
 	player.set_shift(shift)
-
-#pause
-func _unhandled_input(event: InputEvent):
-	if event.is_action_pressed("ui_cancel"):
-		pause_menu.visible = !pause_menu.visible
+	
 
 
 

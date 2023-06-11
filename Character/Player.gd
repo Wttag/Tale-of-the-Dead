@@ -65,10 +65,12 @@ func _physics_process(delta):
 		if is_on_floor():
 			velocity.y = JUMP_VELOCITY
 			can_double_jump = true
+			$Sound_Jump.play()
 		elif can_double_jump:
 			velocity.y = DOUBLE_JUMP_VELOCITY
 			state.travel("DoubleJump")
 			can_double_jump = false
+			$Sound_DoubleJump.play()
 			
 	
 		

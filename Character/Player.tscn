@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://claxuc00jebt8"]
+[gd_scene load_steps=69 format=3 uid="uid://claxuc00jebt8"]
 
 [ext_resource type="Script" path="res://Character/Player.gd" id="1_y34h0"]
 [ext_resource type="Texture2D" uid="uid://b0ki5ge1idonp" path="res://Art/lights/light.png" id="2_2yblw"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://nrj3uxkqucua" path="res://Art/Character/Black/BlackIdle.png" id="3_n1me1"]
 [ext_resource type="Texture2D" uid="uid://cbwn3fu6a3dkh" path="res://Art/Character/Red/Jump.png" id="4_hrd31"]
 [ext_resource type="Texture2D" uid="uid://oor4l6gs4o8" path="res://Art/Character/Red/Run.png" id="7_mwk4e"]
+[ext_resource type="AudioStream" uid="uid://bn30uwbdiu38h" path="res://Sounds/Jump.wav" id="10_fe6yx"]
+[ext_resource type="AudioStream" uid="uid://b4m7audosunq3" path="res://Sounds/Doublejump.wav" id="11_eegm8"]
 [ext_resource type="Texture2D" uid="uid://bv8pwefa52fok" path="res://Art/Character/Black/BlackDoubleJump.png" id="12_1cakj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_62di3"]
@@ -725,3 +727,13 @@ libraries = {
 tree_root = SubResource("AnimationNodeStateMachine_tx16b")
 anim_player = NodePath("../Animations")
 parameters/playback = SubResource("AnimationNodeStateMachinePlayback_vfcrt")
+
+[node name="Sound_Jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_fe6yx")
+volume_db = 2.0
+bus = &"Sounds"
+
+[node name="Sound_DoubleJump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_eegm8")
+volume_db = 1.0
+bus = &"Sounds"

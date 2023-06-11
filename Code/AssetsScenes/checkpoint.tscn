@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://bi2fu2rsnavx2"]
+[gd_scene load_steps=20 format=3 uid="uid://bi2fu2rsnavx2"]
 
 [ext_resource type="Script" path="res://Code/AssetsScenes/checkpoint.gd" id="1_82b12"]
 [ext_resource type="Texture2D" uid="uid://x8r6451ewnio" path="res://Art/SVG/Tori gate.png" id="1_wc5pm"]
 [ext_resource type="Texture2D" uid="uid://b1d7j8hg2sias" path="res://Art/Collactibles/RedFire/RedFire.png" id="2_q55ld"]
+[ext_resource type="AudioStream" uid="uid://bx838yvsicm5e" path="res://Sounds/Teleport.wav" id="4_5ifpp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vuuxp"]
 atlas = ExtResource("2_q55ld")
@@ -191,5 +192,9 @@ libraries = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 39.5)
 shape = SubResource("RectangleShape2D_q70yw")
+
+[node name="Sound_Checkpoint" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_5ifpp")
+bus = &"Sounds"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

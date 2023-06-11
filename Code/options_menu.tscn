@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://dake4hyshsoao"]
+[gd_scene load_steps=40 format=3 uid="uid://dake4hyshsoao"]
 
 [ext_resource type="Script" path="res://Code/options_menu.gd" id="1_doglp"]
 [ext_resource type="Texture2D" uid="uid://ba8grwl3w4lk8" path="res://Ui assets/Slider_base.svg" id="1_rqxhp"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://jgmbndq52ncv" path="res://Ui assets/Control_UI/Down.png" id="13_yityf"]
 [ext_resource type="Texture2D" uid="uid://b2ad8llihs7e7" path="res://Ui assets/Control_UI/Xkey.png" id="14_n5swh"]
 [ext_resource type="Texture2D" uid="uid://x11lctag7fow" path="res://Ui assets/Control_UI/Spacekey.png" id="15_jytjy"]
+[ext_resource type="AudioStream" uid="uid://bgejgthqmhq4l" path="res://Music/Title_music.wav" id="16_4ww7u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2e026"]
 content_margin_left = 4.0
@@ -532,6 +533,10 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 theme = SubResource("Theme_geutx")
 text = "Back"
+
+[node name="Sound_Options" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_4ww7u")
+bus = &"Music"
 
 [connection signal="value_changed" from="MarginContainer/Options UI/Content/Settings/Audio/Sliders/Master" to="." method="_on_master_value_changed"]
 [connection signal="value_changed" from="MarginContainer/Options UI/Content/Settings/Audio/Sliders/Music" to="." method="_on_music_value_changed"]

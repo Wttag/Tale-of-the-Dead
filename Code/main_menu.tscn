@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ceaul3up1mlgf"]
+[gd_scene load_steps=8 format=3 uid="uid://ceaul3up1mlgf"]
 
 [ext_resource type="Script" path="res://Code/main_menu.gd" id="1_ne8xb"]
 [ext_resource type="Texture2D" uid="uid://dtbrkndrk1k32" path="res://Ui assets/Main_menu_bg.jpg" id="2_dijgw"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://4o6kqjfp0ab4" path="res://Ui assets/Logo_blur.jpg" id="3_4emid"]
 [ext_resource type="PackedScene" uid="uid://dake4hyshsoao" path="res://Code/options_menu.tscn" id="5_voa7j"]
 [ext_resource type="PackedScene" uid="uid://bhtmvokeg1xpu" path="res://Code/AssetsScenes/popup.tscn" id="6_4olgp"]
+[ext_resource type="AudioStream" uid="uid://bgejgthqmhq4l" path="res://Music/Title_music.wav" id="7_65uor"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -82,6 +83,11 @@ layout_mode = 1
 
 [node name="PopUp" parent="." instance=ExtResource("6_4olgp")]
 layout_mode = 1
+
+[node name="Music_Title" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_65uor")
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="Content/VBoxContainer/Play" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Content/VBoxContainer/Options" to="." method="_on_options_pressed"]
