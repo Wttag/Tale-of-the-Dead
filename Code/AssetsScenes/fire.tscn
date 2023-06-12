@@ -165,6 +165,7 @@ libraries = {
 }
 
 [node name="Sound_Collect" type="AudioStreamPlayer2D" parent="."]
+volume_db = 2.0
 bus = &"Sounds"
 
 [connection signal="body_entered" from="." to="." method="fire_on_body_entered"]

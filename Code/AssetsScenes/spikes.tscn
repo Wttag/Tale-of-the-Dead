@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://ciayt5uefy2xf"]
+
+[ext_resource type="Texture2D" uid="uid://cuutg0oxd37xn" path="res://Art/SVG/Spikes.png" id="1_ie78x"]
+[ext_resource type="Script" path="res://Code/AssetsScenes/spikes.gd" id="1_n6gc0"]
+[ext_resource type="AudioStream" uid="uid://caf4sti0sgdgi" path="res://Sounds/Death.wav" id="3_ikno6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c6h1m"]
+radius = 29.0
+height = 310.0
+
+[node name="Spikes" type="Area2D"]
+collision_layer = 32
+script = ExtResource("1_n6gc0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ie78x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-13, 7)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_c6h1m")
+
+[node name="Sound_Death" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ikno6")
+bus = &"Sounds"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

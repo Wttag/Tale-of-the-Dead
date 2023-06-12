@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=69 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -64,7 +64,9 @@
 [ext_resource type="Texture2D" uid="uid://smj4vib3iiub" path="res://Art/Envioment/Dark/Background/Building/Building 2.png" id="28_h0qw2"]
 [ext_resource type="AudioStream" uid="uid://dx4patar7yycy" path="res://Music/Light_Music.ogg" id="28_xtak1"]
 [ext_resource type="AudioStream" uid="uid://dabxw3wtgpyj0" path="res://Music/Music_Dark.ogg" id="55_ynffk"]
+[ext_resource type="PackedScene" uid="uid://ciayt5uefy2xf" path="res://Code/AssetsScenes/spikes.tscn" id="58_4g14l"]
 [ext_resource type="PackedScene" uid="uid://bhtmvokeg1xpu" path="res://Code/AssetsScenes/popup.tscn" id="63_4xap7"]
+[ext_resource type="PackedScene" uid="uid://qvgwunnthk2p" path="res://Code/AssetsScenes/axe.tscn" id="66_wf60c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_djuvu"]
 size = Vector2(35594, 628.5)
@@ -748,8 +750,23 @@ color = Color(0, 0, 0, 1)
 position = Vector2(8207, -833)
 texture = ExtResource("7_jibxs")
 
-[node name="Checkpoint" parent="." instance=ExtResource("3_duyg7")]
+[node name="Checkpoints" type="Node" parent="."]
+
+[node name="Checkpoint1" parent="Checkpoints" instance=ExtResource("3_duyg7")]
 position = Vector2(24477, -228)
+
+[node name="Spikes" type="Node" parent="."]
+
+[node name="Spike1" parent="Spikes" instance=ExtResource("58_4g14l")]
+position = Vector2(24557, 1292)
+
+[node name="Axes" type="Node" parent="."]
+
+[node name="Axe1" parent="Axes" instance=ExtResource("66_wf60c")]
+position = Vector2(24524, 1821)
+
+[node name="Tanuki" parent="." instance=ExtResource("15_rm51c")]
+position = Vector2(16069, -60)
 
 [node name="TileMap" type="TileMap" parent="."]
 process_mode = 1
@@ -806,17 +823,16 @@ limit_bottom = 350
 position_smoothing_enabled = true
 editor_draw_limits = true
 
+[node name="Flames" type="Node" parent="."]
+
+[node name="Flame1" parent="Flames" instance=ExtResource("8_dpjyb")]
+position = Vector2(10991, -727)
+
 [node name="Fallzone" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Fallzone"]
 position = Vector2(17796, 696.25)
 shape = SubResource("RectangleShape2D_djuvu")
-
-[node name="Flame1" parent="." instance=ExtResource("8_dpjyb")]
-position = Vector2(10991, -727)
-
-[node name="Tanuki" parent="." instance=ExtResource("15_rm51c")]
-position = Vector2(16069, -60)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

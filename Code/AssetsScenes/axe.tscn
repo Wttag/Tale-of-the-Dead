@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://qvgwunnthk2p"]
+
+[ext_resource type="Script" path="res://Code/AssetsScenes/enemy_axe.gd" id="1_5bb6t"]
+[ext_resource type="Texture2D" uid="uid://bpeghwqbe0r2l" path="res://Art/Envioment/Dark/Axe Black.png" id="2_3q7su"]
+[ext_resource type="Texture2D" uid="uid://dolsq4416d53u" path="res://Art/Envioment/Light/Axe White.png" id="3_4xrrl"]
+[ext_resource type="AudioStream" uid="uid://caf4sti0sgdgi" path="res://Sounds/Death.wav" id="4_1yoce"]
+
+[node name="Axe" type="Area2D"]
+collision_layer = 32
+script = ExtResource("1_5bb6t")
+
+[node name="Dark" type="Sprite2D" parent="."]
+texture = ExtResource("2_3q7su")
+
+[node name="Light" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_4xrrl")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+polygon = PackedVector2Array(-262, 122, -141, 167, -3, 191, 154, 172, 270, 116, 214, 214, 110, 278, 2, 297, -116, 276, -197, 224)
+
+[node name="Sound_Death" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_1yoce")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

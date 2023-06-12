@@ -75,6 +75,7 @@ locale/translations_pot_files=PackedStringArray("res://Dialogue/Tanuki.dialogue"
 2d_physics/layer_3="Background"
 2d_physics/layer_4="Collactibles"
 2d_physics/layer_5="Tanuki"
+2d_physics/layer_6="Enemies"
 
 [physics]
 

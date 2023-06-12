@@ -101,8 +101,10 @@ func _unhandled_input(event: InputEvent):
 #deathzone 
 func _on_fallzone_body_entered(_CharacterBody2D):
 	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
+	$Sound_Death.play()
+	
 	
 #collectibles
 func add_flame():
 	FLAME = FLAME + 1
-	print("Soul Count:", FLAME)
+	print("Flame Count:", FLAME)

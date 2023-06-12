@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7y5u15xjtrrx"
-path="res://.godot/imported/Guide1White.svg-43ed1b36233e22514838ff1d9405f161.ctex"
+uid="uid://cuutg0oxd37xn"
+path="res://.godot/imported/Spikes.png-67da045e1570bda0e8e31dac3e515ee6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/SVG/Guide1White.svg"
-dest_files=["res://.godot/imported/Guide1White.svg-43ed1b36233e22514838ff1d9405f161.ctex"]
+source_file="res://Art/SVG/Spikes.png"
+dest_files=["res://.godot/imported/Spikes.png-67da045e1570bda0e8e31dac3e515ee6.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
