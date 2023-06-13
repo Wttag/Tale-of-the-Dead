@@ -10,8 +10,8 @@ const DOUBLE_JUMP_VELOCITY = -1000.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var dialogue_collision = $CollisionShape2D
-@onready var animation_tree = $AnimationTree
-@onready var state = $AnimationTree.get("parameters/playback")
+@onready var animation_tree = $AnimationTree2
+@onready var state = $AnimationTree2.get("parameters/playback")
 @onready var image = $Image
 
 var can_double_jump = false
