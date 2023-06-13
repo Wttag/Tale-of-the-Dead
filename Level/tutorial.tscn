@@ -761,6 +761,9 @@ position = Vector2(24477, -228)
 [node name="Spike1" parent="Spikes" instance=ExtResource("58_4g14l")]
 position = Vector2(24557, 1292)
 
+[node name="Spike2" parent="Spikes" instance=ExtResource("58_4g14l")]
+position = Vector2(20060, -37)
+
 [node name="Axes" type="Node" parent="."]
 
 [node name="Axe1" parent="Axes" instance=ExtResource("66_wf60c")]
