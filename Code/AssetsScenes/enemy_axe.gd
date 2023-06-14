@@ -12,3 +12,5 @@ func _on_body_entered(body):
 
 func _process(delta):
 	rotate(speed * delta)
+	# Axe should move around a radius in a about 3/4 circle aka "swing"
+	# Center of the radius should be where the chain ends
