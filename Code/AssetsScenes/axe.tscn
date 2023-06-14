@@ -43,7 +43,7 @@ _data = {
 "swing": SubResource("Animation_p8h5o")
 }
 
-[node name="Axe" type="Area2D"]
+[node name="Axe" type="Area2D" groups=["axe"]]
 collision_layer = 32
 script = ExtResource("1_5bb6t")
 rotating = true

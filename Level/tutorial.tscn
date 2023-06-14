@@ -764,7 +764,7 @@ position = Vector2(24557, 1292)
 [node name="Axes" type="Node" parent="."]
 
 [node name="Axe1" parent="Axes" instance=ExtResource("66_wf60c")]
-position = Vector2(15081, 4)
+position = Vector2(14643, -713)
 
 [node name="Tanuki" parent="." instance=ExtResource("15_rm51c")]
 position = Vector2(16069, -60)
