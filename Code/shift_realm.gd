@@ -32,6 +32,9 @@ func set_toggle():
 	darkmode.visible = shift
 	player.set_shift(shift)
 	
+	for axe in get_tree().get_nodes_in_group("axe"):
+		axe.set_shift(shift)
+	
 
 
 

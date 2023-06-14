@@ -1,16 +1,21 @@
 extends Area2D
 
-@export var speed = 5
-	# Axe should move around a radius in a about 3/4 circle 
-	# Shift function should be applied
-	
-# If collides with player player gets respawned to closesest checkpoint
+@export var rotating = false
+@onready var anim = $AnimationPlayer
+@onready var dark = $Dark
+@onready var light = $Light
+
+func _ready():
+	if rotating:
+		anim.play("swing")
+	pass
+
+func set_shift(condition):
+	light.visible = !condition
+	dark.visible = condition
+	pass
+
 func _on_body_entered(body):
 	if body.get_groups().has("player"):
 		get_tree().change_scene_to_file("res://Level/tutorial.tscn")
 		$Sound_Death.play()
-
-func _process(delta):
-	rotate(speed * delta)
-	# Axe should move around a radius in a about 3/4 circle aka "swing"
-	# Center of the radius should be where the chain ends
