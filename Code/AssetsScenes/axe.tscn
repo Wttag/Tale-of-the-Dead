@@ -5,6 +5,21 @@
 [ext_resource type="Texture2D" uid="uid://dolsq4416d53u" path="res://Art/Envioment/Light/Axe White.png" id="3_4xrrl"]
 [ext_resource type="AudioStream" uid="uid://caf4sti0sgdgi" path="res://Sounds/Death.wav" id="4_1yoce"]
 
+[sub_resource type="Animation" id="Animation_dxrs6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_p8h5o"]
 resource_name = "swing"
 length = 3.0
@@ -20,21 +35,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(0.5, 2, 0.5, 2),
 "update": 0,
 "values": [0.0, 0.872665, 0.0, -0.872665]
-}
-
-[sub_resource type="Animation" id="Animation_dxrs6"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_j04np"]

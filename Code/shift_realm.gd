@@ -9,6 +9,12 @@ extends Node
 var shift: bool = true
 signal realm_shifted
 
+#music
+@onready var light_music = $Music_Light
+@onready var dark_music = $Music_Dark
+var light_music_position = null
+var dark_music_position = null
+
 func _ready():
 	camera.position_smoothing_enabled = false
 	set_character_position()
@@ -31,11 +37,29 @@ func set_toggle():
 	lightmode.visible = !shift
 	darkmode.visible = shift
 	player.set_shift(shift)
-	
+	cross_fade_music(shift)
 	for axe in get_tree().get_nodes_in_group("axe"):
 		axe.set_shift(shift)
 	
 
+func cross_fade_music(condition):
+	if condition:
+		#dark
+		light_music_position = light_music.get_playback_position()
+		light_music.stop()
+		
+		if dark_music_position: dark_music.play(dark_music_position)
+		else: dark_music.play()
+		pass
+	else:
+		if light_music_position: light_music.play(light_music_position)
+		else: light_music.play()
+		
+		dark_music_position = dark_music.get_playback_position()
+		dark_music.stop()
+		#light play
+		pass
+	pass
 
 
 
