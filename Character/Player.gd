@@ -9,7 +9,7 @@ const DOUBLE_JUMP_VELOCITY = -1000.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animated_sprite = $AnimatedSprite2D
-@onready var dialogue_collision = $CollisionShape2D
+@onready var dialogue_collision = $Area2D
 @onready var animation_tree = $AnimationTree2
 @onready var state = $AnimationTree2.get("parameters/playback")
 @onready var image = $Image
@@ -94,6 +94,7 @@ func _physics_process(delta):
 func _unhandled_input(event: InputEvent):
 	if Input.is_action_just_pressed("ui_down"):
 		var Tanuki = dialogue_collision.get_overlapping_areas()
+		print(Tanuki, "areas")
 		if Tanuki.size() > 0:
 			Tanuki[0].action()
 			return

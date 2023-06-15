@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dyt8nmmbehkcd"]
+[gd_scene load_steps=7 format=3 uid="uid://d3ebr0vgsyj43"]
 
 [ext_resource type="Shader" path="res://Shaders/wind.gdshader" id="1_qev00"]
+[ext_resource type="Script" path="res://Code/Trees/tree_type_3.gd" id="1_t3kdi"]
 [ext_resource type="Texture2D" uid="uid://dj5vakgvqn8y1" path="res://Art/Envioment/Trees/Tree_dark_2.png" id="2_gaf3v"]
 [ext_resource type="Texture2D" uid="uid://j36axhjkgupm" path="res://Art/Envioment/Trees/Tree_light_2.png" id="3_vwom0"]
 
@@ -29,6 +30,7 @@ shader_parameter/heightOffset = null
 shader_parameter/offset = 0.0
 
 [node name="tree_type_2" type="Node2D"]
+script = ExtResource("1_t3kdi")
 
 [node name="Dark" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_qgufg")

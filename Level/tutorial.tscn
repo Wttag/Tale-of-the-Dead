@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=77 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -36,7 +36,7 @@
 [ext_resource type="Texture2D" uid="uid://cjicvq17jjrvu" path="res://Art/Envioment/Light/Mountains/Mid/Mid 3.png" id="14_kkh3a"]
 [ext_resource type="Texture2D" uid="uid://b38o8lpxeo88s" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 9.png" id="15_ixw0f"]
 [ext_resource type="Texture2D" uid="uid://cw6a2ts82wr8c" path="res://Art/Envioment/Light/Mountains/Mid/Mid 4.png" id="15_jiypc"]
-[ext_resource type="PackedScene" uid="uid://kq6nblh02vbs" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
+[ext_resource type="PackedScene" uid="uid://bsd0sew8danaf" path="res://Code/AssetsScenes/Tanuki.tscn" id="15_rm51c"]
 [ext_resource type="Texture2D" uid="uid://cxuctunpfe843" path="res://Art/Envioment/Dark/Background/Mountain/Mountain 10.png" id="16_22a8q"]
 [ext_resource type="Texture2D" uid="uid://dgvp33rscqkpb" path="res://Art/Envioment/Light/Mountains/Mid/Mid 5.png" id="16_s3b3j"]
 [ext_resource type="Texture2D" uid="uid://dua7rl1tqbsqu" path="res://Art/Envioment/Dark/Background/Mid/Mid 1.png" id="17_267fj"]
@@ -67,9 +67,10 @@
 [ext_resource type="AudioStream" uid="uid://dx4patar7yycy" path="res://Music/Light_Music.ogg" id="28_xtak1"]
 [ext_resource type="AudioStream" uid="uid://dabxw3wtgpyj0" path="res://Music/Music_Dark.ogg" id="55_ynffk"]
 [ext_resource type="PackedScene" uid="uid://ciayt5uefy2xf" path="res://Code/AssetsScenes/spikes.tscn" id="58_4g14l"]
-[ext_resource type="PackedScene" uid="uid://dyt8nmmbehkcd" path="res://Code/Trees/tree_type_2.tscn" id="60_8g85x"]
-[ext_resource type="PackedScene" uid="uid://ducxjjqhboc44" path="res://Code/Trees/tree_type_3.tscn" id="61_25g77"]
+[ext_resource type="PackedScene" uid="uid://d3ebr0vgsyj43" path="res://Code/Trees/tree_type_2.tscn" id="60_8g85x"]
+[ext_resource type="PackedScene" uid="uid://yiwecp06vwwu" path="res://Code/Trees/tree_type_3.tscn" id="61_25g77"]
 [ext_resource type="PackedScene" uid="uid://bhtmvokeg1xpu" path="res://Code/AssetsScenes/popup.tscn" id="63_4xap7"]
+[ext_resource type="Script" path="res://Code/Trees/tree_type_3.gd" id="64_gnwi3"]
 [ext_resource type="PackedScene" uid="uid://qvgwunnthk2p" path="res://Code/AssetsScenes/axe.tscn" id="66_wf60c"]
 [ext_resource type="PackedScene" uid="uid://dye5ds730drye" path="res://Code/Trees/tree_type_1.tscn" id="68_5t2od"]
 
@@ -126,6 +127,7 @@ autoplay = true
 bus = &"Music"
 
 [node name="Lights" type="Node2D" parent="."]
+visible = false
 
 [node name="Light1" type="ColorRect" parent="Lights"]
 material = SubResource("ShaderMaterial_sxw5k")
@@ -895,26 +897,30 @@ position = Vector2(55756, -234)
 
 [node name="TreesBack" type="Node2D" parent="."]
 
-[node name="Tree1" parent="TreesBack" instance=ExtResource("60_8g85x")]
+[node name="Tree1" parent="TreesBack" groups=["tree"] instance=ExtResource("60_8g85x")]
 position = Vector2(7403, -476)
 
-[node name="Tree2" parent="TreesBack" instance=ExtResource("68_5t2od")]
+[node name="Tree2" parent="TreesBack" groups=["tree"] instance=ExtResource("68_5t2od")]
 position = Vector2(24064, -478)
+script = ExtResource("64_gnwi3")
 
-[node name="Tree3" parent="TreesBack" instance=ExtResource("68_5t2od")]
+[node name="Tree3" parent="TreesBack" groups=["tree"] instance=ExtResource("68_5t2od")]
 position = Vector2(38327, -1783)
+script = ExtResource("64_gnwi3")
 
-[node name="Tree6" parent="TreesBack" instance=ExtResource("68_5t2od")]
+[node name="Tree6" parent="TreesBack" groups=["tree"] instance=ExtResource("68_5t2od")]
 position = Vector2(51080, -1915)
+script = ExtResource("64_gnwi3")
 
-[node name="Tree7" parent="TreesBack" instance=ExtResource("68_5t2od")]
+[node name="Tree7" parent="TreesBack" groups=["tree"] instance=ExtResource("68_5t2od")]
 position = Vector2(61477, -473)
 scale = Vector2(-1, 1)
+script = ExtResource("64_gnwi3")
 
-[node name="Tree4" parent="TreesBack" instance=ExtResource("60_8g85x")]
+[node name="Tree4" parent="TreesBack" groups=["tree"] instance=ExtResource("60_8g85x")]
 position = Vector2(33374, -473)
 
-[node name="Tree5" parent="TreesBack" instance=ExtResource("60_8g85x")]
+[node name="Tree5" parent="TreesBack" groups=["tree"] instance=ExtResource("60_8g85x")]
 position = Vector2(43986, -1878)
 scale = Vector2(-1, 1)
 

@@ -40,7 +40,8 @@ func set_toggle():
 	cross_fade_music(shift)
 	for axe in get_tree().get_nodes_in_group("axe"):
 		axe.set_shift(shift)
-	
+	for tree in get_tree().get_nodes_in_group("tree"):
+		tree.set_shift(shift)
 
 func cross_fade_music(condition):
 	if condition:

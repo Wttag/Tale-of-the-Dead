@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://claxuc00jebt8"]
+[gd_scene load_steps=71 format=3 uid="uid://claxuc00jebt8"]
 
 [ext_resource type="Script" path="res://Character/Player.gd" id="1_y34h0"]
 [ext_resource type="Texture2D" uid="uid://b0ki5ge1idonp" path="res://Art/lights/light.png" id="2_2yblw"]
@@ -675,6 +675,10 @@ graph_offset = Vector2(-77.3263, 62.2394)
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_ye5n0"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gqqgn"]
+radius = 78.0
+height = 332.0
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_y34h0")
@@ -740,3 +744,11 @@ bus = &"Sounds"
 
 [node name="Sound_Death" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_xcqdu")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 32)
+shape = SubResource("CapsuleShape2D_gqqgn")
