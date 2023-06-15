@@ -47,17 +47,21 @@ func cross_fade_music(condition):
 	if condition:
 		#dark
 		light_music_position = light_music.get_playback_position()
-		light_music.stop()
+		light_music.get_node("AnimationPlayer").play("fade-out")
 		
 		if dark_music_position: dark_music.play(dark_music_position)
 		else: dark_music.play()
+		dark_music.get_node("AnimationPlayer").play("fade-in")
 		pass
 	else:
-		if light_music_position: light_music.play(light_music_position)
+		dark_music_position = dark_music.get_playback_position()
+		dark_music.get_node("AnimationPlayer").play("fade-out")
+		
+		if light_music_position: 
+			light_music.play(light_music_position)
 		else: light_music.play()
 		
-		dark_music_position = dark_music.get_playback_position()
-		dark_music.stop()
+		light_music.get_node("AnimationPlayer").play("fade-in")
 		#light play
 		pass
 	pass

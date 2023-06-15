@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://kq6nblh02vbs"]
+[gd_scene load_steps=4 format=3 uid="uid://bsd0sew8danaf"]
 
 [ext_resource type="Script" path="res://Code/AssetsScenes/Tanuki.gd" id="1_y4iyp"]
 [ext_resource type="Texture2D" uid="uid://1ls8ns8bi13b" path="res://Art/Character/Tanuki/Untitled_Artwork (3).png" id="2_xck8l"]

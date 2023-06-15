@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=85 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -74,6 +74,138 @@
 [ext_resource type="PackedScene" uid="uid://qvgwunnthk2p" path="res://Code/AssetsScenes/axe.tscn" id="66_wf60c"]
 [ext_resource type="PackedScene" uid="uid://dye5ds730drye" path="res://Code/Trees/tree_type_1.tscn" id="68_5t2od"]
 
+[sub_resource type="Animation" id="Animation_sj4ao"]
+resource_name = "fade-in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-30.0, -10.0]
+}
+
+[sub_resource type="Animation" id="Animation_y62tk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-10.0]
+}
+
+[sub_resource type="Animation" id="Animation_3241l"]
+resource_name = "fade-out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-10.0, -30.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"stop"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k4u87"]
+_data = {
+"RESET": SubResource("Animation_y62tk"),
+"fade-in": SubResource("Animation_sj4ao"),
+"fade-out": SubResource("Animation_3241l")
+}
+
+[sub_resource type="Animation" id="Animation_0q2kt"]
+resource_name = "fade-in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-30.0, -10.0]
+}
+
+[sub_resource type="Animation" id="Animation_5526v"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-30.0]
+}
+
+[sub_resource type="Animation" id="Animation_j025c"]
+resource_name = "fade-out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-10.0, -30.0]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"stop"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uw5yc"]
+_data = {
+"RESET": SubResource("Animation_5526v"),
+"fade-in": SubResource("Animation_0q2kt"),
+"fade-out": SubResource("Animation_j025c")
+}
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sxw5k"]
 shader = ExtResource("4_kxl5x")
 shader_parameter/angle = 0.0
@@ -120,11 +252,21 @@ volume_db = -10.0
 autoplay = true
 bus = &"Music"
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Music_Light"]
+libraries = {
+"": SubResource("AnimationLibrary_k4u87")
+}
+
 [node name="Music_Dark" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("55_ynffk")
-volume_db = -10.0
+volume_db = -30.0
 autoplay = true
 bus = &"Music"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Music_Dark"]
+libraries = {
+"": SubResource("AnimationLibrary_uw5yc")
+}
 
 [node name="Lights" type="Node2D" parent="."]
 visible = false
