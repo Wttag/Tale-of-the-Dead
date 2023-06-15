@@ -30,11 +30,11 @@ shader_parameter/offset = 0.0
 
 [node name="Tree_type_1" type="Node2D"]
 
-[node name="Tree_dark_1" type="Sprite2D" parent="."]
+[node name="Dark" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_d31dv")
 texture = ExtResource("2_0awm1")
 
-[node name="Tree_light_1" type="Sprite2D" parent="."]
+[node name="Light" type="Sprite2D" parent="."]
 visible = false
 material = SubResource("ShaderMaterial_hfr53")
 texture = ExtResource("3_0hckw")

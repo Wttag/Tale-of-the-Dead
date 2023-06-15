@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyt8nmmbehkcd"]
+
+[ext_resource type="Shader" path="res://Shaders/wind.gdshader" id="1_qev00"]
+[ext_resource type="Texture2D" uid="uid://dj5vakgvqn8y1" path="res://Art/Envioment/Trees/Tree_dark_2.png" id="2_gaf3v"]
+[ext_resource type="Texture2D" uid="uid://j36axhjkgupm" path="res://Art/Envioment/Trees/Tree_light_2.png" id="3_vwom0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qgufg"]
+shader = ExtResource("1_qev00")
+shader_parameter/speed = 2.0
+shader_parameter/minStrength = 0.05
+shader_parameter/maxStrength = 0.03
+shader_parameter/strengthScale = 100.0
+shader_parameter/interval = 3.5
+shader_parameter/detail = 1.0
+shader_parameter/distortion = null
+shader_parameter/heightOffset = null
+shader_parameter/offset = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v3ors"]
+shader = ExtResource("1_qev00")
+shader_parameter/speed = 2.0
+shader_parameter/minStrength = 0.05
+shader_parameter/maxStrength = 0.03
+shader_parameter/strengthScale = 100.0
+shader_parameter/interval = 3.5
+shader_parameter/detail = 1.0
+shader_parameter/distortion = null
+shader_parameter/heightOffset = null
+shader_parameter/offset = 0.0
+
+[node name="tree_type_2" type="Node2D"]
+
+[node name="Dark" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_qgufg")
+texture = ExtResource("2_gaf3v")
+
+[node name="Light" type="Sprite2D" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_v3ors")
+texture = ExtResource("3_vwom0")
