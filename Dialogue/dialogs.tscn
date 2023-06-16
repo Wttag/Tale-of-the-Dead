@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7eptkbpcnhv1"]
+
+[ext_resource type="Texture2D" uid="uid://ct3elrtgrtha0" path="res://Dialogue/UI/Black.png" id="1_3qpdm"]
+[ext_resource type="Theme" uid="uid://yxeb1ysqoxrh" path="res://Ui assets/Themes/options_theme.tres" id="2_05tyl"]
+[ext_resource type="Texture2D" uid="uid://bbactvao6ks23" path="res://Dialogue/UI/Label.png" id="3_7142o"]
+[ext_resource type="Texture2D" uid="uid://dhjsowsl1huxs" path="res://Dialogue/UI/White.png" id="4_misnp"]
+
+[node name="Dialogs" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Black" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -360.0
+offset_top = -284.0
+offset_right = 360.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = -43
+
+[node name="Red" type="TextureRect" parent="Black"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture = ExtResource("3_7142o")
+
+[node name="Text" type="CenterContainer" parent="Black"]
+show_behind_parent = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="Black_bg" type="TextureRect" parent="Black/Text"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture = ExtResource("1_3qpdm")
+
+[node name="Label" type="Label" parent="Black/Text"]
+layout_mode = 2
+theme = ExtResource("2_05tyl")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "Hello little fella! Are you lost?"
+
+[node name="White" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -360.0
+offset_top = -284.0
+offset_right = 360.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = -43
+
+[node name="Red" type="TextureRect" parent="White"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture = ExtResource("3_7142o")
+
+[node name="Text" type="CenterContainer" parent="White"]
+show_behind_parent = true
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="White_bg" type="TextureRect" parent="White/Text"]
+layout_mode = 2
+texture = ExtResource("4_misnp")
+
+[node name="Label" type="Label" parent="White/Text"]
+layout_mode = 2
+theme = ExtResource("2_05tyl")
+theme_override_font_sizes/font_size = 32
+text = "Hello little fella! Are you lost?"
