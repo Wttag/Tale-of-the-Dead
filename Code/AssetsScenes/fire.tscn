@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://btmoie57s0ypt"]
+[gd_scene load_steps=19 format=3 uid="uid://btmoie57s0ypt"]
 
 [ext_resource type="Script" path="res://Code/AssetsScenes/fire.gd" id="1_yj4yd"]
 [ext_resource type="Texture2D" uid="uid://b1d7j8hg2sias" path="res://Art/Collactibles/RedFire/RedFire.png" id="2_iiw7s"]
+[ext_resource type="Texture2D" uid="uid://bu8p4woyvfmvt" path="res://Art/lights/PngItem_734497.png" id="3_m822d"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ramrm"]
 radius = 38.0526
@@ -146,6 +147,8 @@ _data = {
 }
 
 [node name="Fire" type="Area2D"]
+light_mask = 2
+visibility_layer = 2
 script = ExtResource("1_yj4yd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -167,6 +170,16 @@ libraries = {
 [node name="Sound_Collect" type="AudioStreamPlayer2D" parent="."]
 volume_db = 2.0
 bus = &"Sounds"
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(3, 15)
+scale = Vector2(0.276149, 0.369559)
+range_item_cull_mask = 2
+shadow_enabled = true
+shadow_item_cull_mask = 2
+texture = ExtResource("3_m822d")
 
 [connection signal="body_entered" from="." to="." method="fire_on_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

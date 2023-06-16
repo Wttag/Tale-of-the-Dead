@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://v7bnmeyuycji"
-path="res://.godot/imported/transition.png-ec34e989cad4f47b16ddcc6328af5d4f.ctex"
+uid="uid://b1bd3bg3ndti5"
+path="res://.godot/imported/logo 2 b_w.png-642323bd5bd7f3df5905d2ee72c9dea6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/End Sceen/transition.png"
-dest_files=["res://.godot/imported/transition.png-ec34e989cad4f47b16ddcc6328af5d4f.ctex"]
+source_file="res://Art/SVG/logo 2 b_w.png"
+dest_files=["res://.godot/imported/logo 2 b_w.png-642323bd5bd7f3df5905d2ee72c9dea6.ctex"]
 
 [params]
 
