@@ -4,6 +4,7 @@ extends Node
 @onready var lightmode = $"Light Mode"
 @onready var darkmode = $DarkMode
 @onready var pause_menu = $"CanvasLayer/Options Menu"
+@onready var tanuki_dialog = $Tanuki/Dialogs
 
 
 var shift: bool = true
@@ -37,6 +38,7 @@ func set_toggle():
 	lightmode.visible = !shift
 	darkmode.visible = shift
 	player.set_shift(shift)
+	tanuki_dialog.set_shift(shift)
 	cross_fade_music(shift)
 	for axe in get_tree().get_nodes_in_group("axe"):
 		axe.set_shift(shift)

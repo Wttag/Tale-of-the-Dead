@@ -90,6 +90,11 @@ func _physics_process(delta):
 		
 	move_and_slide()
 
+func die():
+	Global.has_died = true
+	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
+	$Sound_Death.play()
+	
 #dialog
 func _unhandled_input(event: InputEvent):
 	if Input.is_action_just_pressed("ui_down"):
@@ -101,9 +106,7 @@ func _unhandled_input(event: InputEvent):
 
 #deathzone 
 func _on_fallzone_body_entered(_CharacterBody2D):
-	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
-	$Sound_Death.play()
-	
+	die()
 	
 #collectibles
 func add_flame():
