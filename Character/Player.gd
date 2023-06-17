@@ -91,6 +91,7 @@ func _physics_process(delta):
 	move_and_slide()
 
 func die():
+#	print("died player")
 	Global.has_died = true
 	get_tree().change_scene_to_file("res://Level/tutorial.tscn")
 	$Sound_Death.play()
@@ -99,16 +100,17 @@ func die():
 func _unhandled_input(event: InputEvent):
 	if Input.is_action_just_pressed("ui_down"):
 		var Tanuki = dialogue_collision.get_overlapping_areas()
-		print(Tanuki, "areas")
 		if Tanuki.size() > 0:
 			Tanuki[0].action()
 			return
 
 #deathzone 
-func _on_fallzone_body_entered(_CharacterBody2D):
-	die()
+func _on_fallzone_body_entered(body):
+	if body.get_groups().has("player"):
+		die()
+		print("yes fall zone")
 	
 #collectibles
 func add_flame():
 	FLAME = FLAME + 1
-	print("Flame Count:", FLAME)
+

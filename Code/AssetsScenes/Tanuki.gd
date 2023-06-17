@@ -10,8 +10,8 @@ var entered = false
 
 func action():
 	entered = true
+	dialog.play()
 	anim.play("fade-in")
-	print("show dialog")
 	pass
 #	DialogueManager.show_example_dialogue_balloon(dialouge_resource, dialog_start)
 

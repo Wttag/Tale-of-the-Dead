@@ -21,7 +21,6 @@ func _on_toggle_changed():
 	for i in get_layers_count():
 	
 		var modulate_color = get_layer_modulate(i)
-		print('layer',i)
 		var existsInTheLight = layer_definitions[i].existsInTheLight
 		var existsInTheDark = layer_definitions[i].existsInTheDark
 		

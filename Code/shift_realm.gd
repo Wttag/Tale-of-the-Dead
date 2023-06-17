@@ -20,7 +20,7 @@ func _ready():
 	camera.position_smoothing_enabled = false
 	set_character_position()
 	set_checkpoint_position(player.global_position)
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(0.1).timeout
 	camera.position_smoothing_enabled = true
 	pass
 
