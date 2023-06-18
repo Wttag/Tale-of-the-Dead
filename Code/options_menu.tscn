@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://dake4hyshsoao"]
+[gd_scene load_steps=41 format=3 uid="uid://dake4hyshsoao"]
 
 [ext_resource type="Script" path="res://Code/options_menu.gd" id="1_doglp"]
 [ext_resource type="Texture2D" uid="uid://ba8grwl3w4lk8" path="res://Ui assets/Slider_base.svg" id="1_rqxhp"]
@@ -151,9 +151,6 @@ content_margin_bottom = 4.0
 content_margin_bottom = 20.0
 texture = ExtResource("6_wtar0")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lrsj1"]
-content_margin_bottom = 20.0
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a647s"]
 content_margin_bottom = 10.0
 texture = ExtResource("1_rqxhp")
@@ -217,7 +214,7 @@ HSlider/icons/grabber_disabled = ExtResource("5_hkl8y")
 HSlider/icons/grabber_highlight = ExtResource("5_hkl8y")
 HSlider/icons/tick = ExtResource("6_wtar0")
 HSlider/styles/grabber_area = SubResource("StyleBoxTexture_bjs6g")
-HSlider/styles/grabber_area_highlight = SubResource("StyleBoxEmpty_lrsj1")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxTexture_bjs6g")
 HSlider/styles/slider = SubResource("StyleBoxTexture_a647s")
 Label/colors/font_color = Color(0, 0, 0, 1)
 Label/colors/font_outline_color = Color(0, 0, 0, 0)
