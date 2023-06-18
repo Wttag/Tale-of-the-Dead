@@ -1,5 +1,6 @@
 extends Control
 
+@onready var credits = $"CanvasLayer/Credits"
 
 #back Button: if open from play scene should go back there if opened from menu than there
 func _on_back_pressed():
@@ -33,4 +34,5 @@ func _on_full_screen_toggled(button_pressed):
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://Code/credits.tscn")
+	print("yes")
+	credits.show()
