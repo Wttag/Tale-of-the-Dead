@@ -155,7 +155,7 @@ texture = ExtResource("6_wtar0")
 content_margin_bottom = 20.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a647s"]
-content_margin_bottom = 20.0
+content_margin_bottom = 10.0
 texture = ExtResource("1_rqxhp")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3nvj6"]
@@ -345,7 +345,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 24
 
-[node name="Master" type="HSlider" parent="MarginContainer/Options UI/Content/Settings/Audio/Sliders"]
+[node name="-20" type="HSlider" parent="MarginContainer/Options UI/Content/Settings/Audio/Sliders"]
 layout_mode = 2
 size_flags_vertical = 3
 mouse_default_cursor_shape = 10
@@ -574,7 +574,7 @@ layer = 3
 [node name="Credits" parent="CanvasLayer" instance=ExtResource("18_fayry")]
 visible = false
 
-[connection signal="value_changed" from="MarginContainer/Options UI/Content/Settings/Audio/Sliders/Master" to="." method="_on_master_value_changed"]
+[connection signal="value_changed" from="MarginContainer/Options UI/Content/Settings/Audio/Sliders/-20" to="." method="_on_master_value_changed"]
 [connection signal="value_changed" from="MarginContainer/Options UI/Content/Settings/Audio/Sliders/Music" to="." method="_on_music_value_changed"]
 [connection signal="value_changed" from="MarginContainer/Options UI/Content/Settings/Audio/Sliders/Sound FX" to="." method="_on_sound_fx_value_changed"]
 [connection signal="toggled" from="MarginContainer/Options UI/Content/Settings/Video/Checks/Full Screen" to="." method="_on_full_screen_toggled"]
