@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=100 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -65,6 +65,11 @@
 [ext_resource type="Texture2D" uid="uid://c6ijqqah61a8n" path="res://Art/Envioment/Dark/Background/Front/Front 7.png" id="28_24m7n"]
 [ext_resource type="Texture2D" uid="uid://smj4vib3iiub" path="res://Art/Envioment/Dark/Background/Building/Building 2.png" id="28_h0qw2"]
 [ext_resource type="AudioStream" uid="uid://dx4patar7yycy" path="res://Music/Light_Music.ogg" id="28_xtak1"]
+[ext_resource type="Texture2D" uid="uid://cgrhoyntl8s6l" path="res://Art/Envioment/Clouds/Cloud_1.png" id="29_ybs58"]
+[ext_resource type="Texture2D" uid="uid://duhlr2xx2115g" path="res://Art/Envioment/Clouds/Cloud_2.png" id="30_pvbsb"]
+[ext_resource type="Texture2D" uid="uid://hes2wlf76eye" path="res://Art/Envioment/Clouds/Cloud_3.png" id="31_nk4oa"]
+[ext_resource type="Texture2D" uid="uid://cbglxho0y0axw" path="res://Art/Envioment/Clouds/Cloud_4.png" id="32_n5gs6"]
+[ext_resource type="Texture2D" uid="uid://cd14x627a787x" path="res://Art/Envioment/Clouds/Cloud_5.png" id="33_r74jd"]
 [ext_resource type="AudioStream" uid="uid://dabxw3wtgpyj0" path="res://Music/Music_Dark.ogg" id="55_ynffk"]
 [ext_resource type="PackedScene" uid="uid://ciayt5uefy2xf" path="res://Code/AssetsScenes/spikes.tscn" id="58_4g14l"]
 [ext_resource type="Texture2D" uid="uid://l2y12g5cliyf" path="res://Art/End Sceen/Mountain1.png" id="59_8nhdq"]
@@ -301,8 +306,54 @@ centered = false
 position = Vector2(64357, -744)
 texture = ExtResource("3_it31s")
 
+[node name="Cloud2" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(1.1, 1)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Cloud1" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(13567, -2031)
+texture = ExtResource("29_ybs58")
+
+[node name="Cloud6" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(2318, -2155)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud8" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(5896, -1052)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud7" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(6167, -1732)
+texture = ExtResource("30_pvbsb")
+flip_h = true
+
+[node name="Cloud10" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(16628, -1669)
+texture = ExtResource("30_pvbsb")
+flip_h = true
+
+[node name="Cloud9" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(13132, -1253)
+texture = ExtResource("30_pvbsb")
+flip_h = true
+
+[node name="Cloud3" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(10505, -1968)
+texture = ExtResource("31_nk4oa")
+
+[node name="Cloud4" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(1258, -1094)
+texture = ExtResource("32_n5gs6")
+
+[node name="Cloud5" type="Sprite2D" parent="Light Mode/Cloud2"]
+position = Vector2(20006, -1669)
+texture = ExtResource("33_r74jd")
+flip_h = true
+
 [node name="Mountain Big" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.99, 0.99)
+motion_scale = Vector2(0.995, 0.995)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mountain1" type="Sprite2D" parent="Light Mode/Mountain Big"]
@@ -327,7 +378,7 @@ position = Vector2(10901, -846)
 texture = ExtResource("7_ww401")
 
 [node name="Mountain Mid" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.98, 0.98)
+motion_scale = Vector2(0.99, 0.99)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mountain1" type="Sprite2D" parent="Light Mode/Mountain Mid"]
@@ -361,8 +412,61 @@ position = Vector2(16032, -703)
 texture = ExtResource("10_v5d6g")
 flip_h = true
 
+[node name="Cloud1" type="ParallaxLayer" parent="Light Mode"]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Cloud1" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(517, -924)
+texture = ExtResource("29_ybs58")
+
+[node name="Cloud8" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(17128, -1424)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud6" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(9982, -1667)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud10" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(12403, -953)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud2" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(3654, -1147)
+texture = ExtResource("30_pvbsb")
+
+[node name="Cloud7" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(9404, -848)
+texture = ExtResource("30_pvbsb")
+flip_h = true
+
+[node name="Cloud3" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(2028, -2414)
+texture = ExtResource("31_nk4oa")
+
+[node name="Cloud9" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(18947, -1978)
+texture = ExtResource("31_nk4oa")
+flip_h = true
+
+[node name="Cloud4" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(13134, -2392)
+texture = ExtResource("32_n5gs6")
+
+[node name="Cloud11" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(6658, -751)
+texture = ExtResource("32_n5gs6")
+
+[node name="Cloud5" type="Sprite2D" parent="Light Mode/Cloud1"]
+position = Vector2(5671, -2047)
+texture = ExtResource("33_r74jd")
+
 [node name="Mountain small" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.97, 0.97)
+motion_scale = Vector2(0.985, 0.985)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mountain1" type="Sprite2D" parent="Light Mode/Mountain small"]
@@ -407,7 +511,7 @@ texture = ExtResource("11_fw0y4")
 flip_h = true
 
 [node name="Mid" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.96, 0.96)
+motion_scale = Vector2(0.98, 0.98)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mid 1" type="Sprite2D" parent="Light Mode/Mid"]
@@ -437,7 +541,7 @@ texture = ExtResource("14_kkh3a")
 flip_h = true
 
 [node name="Mid2" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.95, 0.95)
+motion_scale = Vector2(0.975, 0.975)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mid 2" type="Sprite2D" parent="Light Mode/Mid2"]
@@ -467,7 +571,7 @@ texture = ExtResource("13_6svh0")
 flip_h = true
 
 [node name="Mid_water" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.94, 0.94)
+motion_scale = Vector2(0.97, 0.97)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mid 4" type="Sprite2D" parent="Light Mode/Mid_water"]
@@ -480,7 +584,7 @@ position = Vector2(14510, -347.5)
 texture = ExtResource("16_s3b3j")
 
 [node name="Front" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.93, 0.93)
+motion_scale = Vector2(0.965, 0.965)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Front1" type="Sprite2D" parent="Light Mode/Front"]
@@ -509,7 +613,7 @@ position = Vector2(17856, -10)
 texture = ExtResource("20_raanq")
 
 [node name="Front2" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.93, 0.93)
+motion_scale = Vector2(0.96, 0.96)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Building1" type="Sprite2D" parent="Light Mode/Front2"]
@@ -547,7 +651,7 @@ texture = ExtResource("21_m7xoe")
 flip_h = true
 
 [node name="Front3" type="ParallaxLayer" parent="Light Mode"]
-motion_scale = Vector2(0.91, 0.91)
+motion_scale = Vector2(0.955, 0.955)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Front1" type="Sprite2D" parent="Light Mode/Front3"]
@@ -626,8 +730,55 @@ centered = false
 position = Vector2(64386, -756)
 texture = ExtResource("5_u8svd")
 
+[node name="Cloud2" type="ParallaxLayer" parent="DarkMode"]
+modulate = Color(0, 0, 0, 1)
+motion_scale = Vector2(1.1, 1)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Cloud1" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(13567, -2031)
+texture = ExtResource("29_ybs58")
+
+[node name="Cloud6" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(2318, -2155)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud8" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(5893, -1051)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud7" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(6167, -1732)
+texture = ExtResource("30_pvbsb")
+flip_h = true
+
+[node name="Cloud10" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(16628, -1669)
+texture = ExtResource("30_pvbsb")
+flip_h = true
+
+[node name="Cloud9" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(13129, -1252)
+texture = ExtResource("30_pvbsb")
+flip_h = true
+
+[node name="Cloud3" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(10505, -1968)
+texture = ExtResource("31_nk4oa")
+
+[node name="Cloud4" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(1258, -1094)
+texture = ExtResource("32_n5gs6")
+
+[node name="Cloud5" type="Sprite2D" parent="DarkMode/Cloud2"]
+position = Vector2(20006, -1669)
+texture = ExtResource("33_r74jd")
+flip_h = true
+
 [node name="Mountain Big" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.99, 0.99)
+motion_scale = Vector2(0.995, 0.995)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mountain1" type="Sprite2D" parent="DarkMode/Mountain Big"]
@@ -652,7 +803,7 @@ position = Vector2(10901, -846)
 texture = ExtResource("15_ixw0f")
 
 [node name="Mountain Mid" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.98, 0.98)
+motion_scale = Vector2(0.99, 0.99)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mountain1" type="Sprite2D" parent="DarkMode/Mountain Mid"]
@@ -686,8 +837,63 @@ position = Vector2(16032, -703)
 texture = ExtResource("16_22a8q")
 flip_h = true
 
+[node name="Cloud1" type="ParallaxLayer" parent="DarkMode"]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Cloud1" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(517, -924)
+texture = ExtResource("29_ybs58")
+
+[node name="Cloud8" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(17128, -1424)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud6" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(9982, -1667)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud10" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(12403, -953)
+texture = ExtResource("29_ybs58")
+flip_h = true
+
+[node name="Cloud2" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(3654, -1147)
+texture = ExtResource("30_pvbsb")
+
+[node name="Cloud7" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(9405, -845)
+texture = ExtResource("30_pvbsb")
+flip_h = true
+
+[node name="Cloud3" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(2028, -2414)
+texture = ExtResource("31_nk4oa")
+
+[node name="Cloud9" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(18947, -1978)
+texture = ExtResource("31_nk4oa")
+flip_h = true
+
+[node name="Cloud4" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(13134, -2392)
+texture = ExtResource("32_n5gs6")
+
+[node name="Cloud11" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(6659, -752)
+texture = ExtResource("32_n5gs6")
+
+[node name="Cloud5" type="Sprite2D" parent="DarkMode/Cloud1"]
+position = Vector2(5671, -2047)
+texture = ExtResource("33_r74jd")
+
 [node name="Mountain small" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.97, 0.97)
+motion_scale = Vector2(0.985, 0.985)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mountain1" type="Sprite2D" parent="DarkMode/Mountain small"]
@@ -732,7 +938,7 @@ texture = ExtResource("9_hr1nx")
 flip_h = true
 
 [node name="Mid" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.96, 0.96)
+motion_scale = Vector2(0.98, 0.98)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mid 1" type="Sprite2D" parent="DarkMode/Mid"]
@@ -762,7 +968,7 @@ position = Vector2(18651, -147)
 texture = ExtResource("19_5tk24")
 
 [node name="Mid2" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.95, 0.95)
+motion_scale = Vector2(0.975, 0.975)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mid 1" type="Sprite2D" parent="DarkMode/Mid2"]
@@ -797,7 +1003,7 @@ texture = ExtResource("18_8qgqe")
 flip_h = true
 
 [node name="Mid_water" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.94, 0.94)
+motion_scale = Vector2(0.97, 0.97)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Mid 4" type="Sprite2D" parent="DarkMode/Mid_water"]
@@ -810,7 +1016,7 @@ position = Vector2(14510, -347.5)
 texture = ExtResource("21_h0nmy")
 
 [node name="Front" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.93, 0.93)
+motion_scale = Vector2(0.965, 0.965)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Front1" type="Sprite2D" parent="DarkMode/Front"]
@@ -839,7 +1045,7 @@ position = Vector2(17856, -10)
 texture = ExtResource("27_l8rkp")
 
 [node name="Front2" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.93, 0.93)
+motion_scale = Vector2(0.96, 0.96)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Building1" type="Sprite2D" parent="DarkMode/Front2"]
@@ -877,7 +1083,7 @@ texture = ExtResource("28_24m7n")
 flip_h = true
 
 [node name="Front3" type="ParallaxLayer" parent="DarkMode"]
-motion_scale = Vector2(0.91, 0.91)
+motion_scale = Vector2(0.955, 0.955)
 motion_mirroring = Vector2(20000, 0)
 
 [node name="Front1" type="Sprite2D" parent="DarkMode/Front3"]
@@ -1167,14 +1373,13 @@ position = Vector2(37903, -1413)
 position = Vector2(48964, -2774)
 
 [node name="Lights" type="Node2D" parent="."]
-visible = false
 
 [node name="Light1" type="ColorRect" parent="Lights"]
 material = SubResource("ShaderMaterial_sxw5k")
-offset_left = 6770.0
-offset_top = -1562.0
-offset_right = 10165.0
-offset_bottom = 249.0
+offset_left = 6549.0
+offset_top = -1580.0
+offset_right = 9944.0
+offset_bottom = 231.0
 color = Color(1, 1, 0.803922, 1)
 
 [node name="Light3" type="ColorRect" parent="Lights"]
@@ -1190,19 +1395,19 @@ color = Color(1, 1, 0.803922, 1)
 [node name="Light2" type="ColorRect" parent="Lights"]
 top_level = true
 material = SubResource("ShaderMaterial_d4yql")
-offset_left = 13485.0
-offset_top = -2505.0
-offset_right = 16880.0
-offset_bottom = 459.0
+offset_left = 13475.0
+offset_top = -2315.0
+offset_right = 16870.0
+offset_bottom = 649.0
 color = Color(1, 1, 0.803922, 1)
 
 [node name="Light4" type="ColorRect" parent="Lights"]
 top_level = true
 material = SubResource("ShaderMaterial_d4yql")
-offset_left = 35430.0
-offset_top = -3929.0
-offset_right = 38825.0
-offset_bottom = 8.0
+offset_left = 35438.0
+offset_top = -4051.0
+offset_right = 38833.0
+offset_bottom = 279.0
 color = Color(1, 1, 0.803922, 1)
 
 [node name="Light5" type="ColorRect" parent="Lights"]
