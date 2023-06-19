@@ -16,8 +16,13 @@ func action():
 #	DialogueManager.show_example_dialogue_balloon(dialouge_resource, dialog_start)
 
 func _on_area_entered(area):
-	if area.get_groups().has("player") and entered:
-		anim.play("fade-in")
+	if area.get_groups().has("player"):
+		if entered:
+			anim.play("fade-in")
+		else:
+			entered = true
+			dialog.play()
+			anim.play("fade-in")
 		pass
 	pass # Replace with function body.
 

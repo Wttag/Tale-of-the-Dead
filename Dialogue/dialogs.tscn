@@ -98,13 +98,14 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 
 [node name="Black_bg" type="TextureRect" parent="Black/Text"]
+custom_minimum_size = Vector2(900, 300)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
 texture = ExtResource("1_3qpdm")
 
 [node name="Label" type="Label" parent="Black/Text"]
-custom_minimum_size = Vector2(630, 0)
+custom_minimum_size = Vector2(830, 0)
 layout_mode = 2
 theme = ExtResource("2_05tyl")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -144,11 +145,12 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 
 [node name="White_bg" type="TextureRect" parent="White/Text"]
+custom_minimum_size = Vector2(900, 300)
 layout_mode = 2
 texture = ExtResource("4_misnp")
 
 [node name="Label" type="Label" parent="White/Text"]
-custom_minimum_size = Vector2(630, 0)
+custom_minimum_size = Vector2(830, 0)
 layout_mode = 2
 theme = ExtResource("2_05tyl")
 theme_override_font_sizes/font_size = 44
