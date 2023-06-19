@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=3 uid="uid://cm2oexq2341d5"]
+[gd_scene load_steps=102 format=3 uid="uid://cm2oexq2341d5"]
 
 [ext_resource type="Script" path="res://Code/shift_realm.gd" id="1_v1w1j"]
 [ext_resource type="PackedScene" uid="uid://claxuc00jebt8" path="res://Character/Player.tscn" id="2_4o7g1"]
@@ -70,6 +70,8 @@
 [ext_resource type="Texture2D" uid="uid://hes2wlf76eye" path="res://Art/Envioment/Clouds/Cloud_3.png" id="31_nk4oa"]
 [ext_resource type="Texture2D" uid="uid://cbglxho0y0axw" path="res://Art/Envioment/Clouds/Cloud_4.png" id="32_n5gs6"]
 [ext_resource type="Texture2D" uid="uid://cd14x627a787x" path="res://Art/Envioment/Clouds/Cloud_5.png" id="33_r74jd"]
+[ext_resource type="PackedScene" uid="uid://bw4dbjo2u46y" path="res://Code/AssetsScenes/lights.tscn" id="35_wac8y"]
+[ext_resource type="PackedScene" uid="uid://dyb2pmnfheo4j" path="res://Code/AssetsScenes/light_2.tscn" id="36_j8f87"]
 [ext_resource type="AudioStream" uid="uid://dabxw3wtgpyj0" path="res://Music/Music_Dark.ogg" id="55_ynffk"]
 [ext_resource type="PackedScene" uid="uid://ciayt5uefy2xf" path="res://Code/AssetsScenes/spikes.tscn" id="58_4g14l"]
 [ext_resource type="Texture2D" uid="uid://l2y12g5cliyf" path="res://Art/End Sceen/Mountain1.png" id="59_8nhdq"]
@@ -714,6 +716,90 @@ offset_bottom = 612.0
 position = Vector2(8207, -833)
 texture = ExtResource("4_t7x5t")
 
+[node name="Light1" type="ParallaxLayer" parent="Light Mode"]
+light_mask = 2
+visibility_layer = 2
+motion_scale = Vector2(0.75, 1)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Lights1" parent="Light Mode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(6180, -425)
+
+[node name="Lights2" parent="Light Mode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(2512, -614)
+
+[node name="Lights3" parent="Light Mode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(7199, -504)
+
+[node name="Lights4" parent="Light Mode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(10504, -806)
+
+[node name="Lights5" parent="Light Mode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(13618, -703)
+
+[node name="Lights6" parent="Light Mode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(16870, -315)
+
+[node name="Light_1" parent="Light Mode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(1606, -329)
+
+[node name="Light_2" parent="Light Mode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(5013, -266)
+
+[node name="Light_3" parent="Light Mode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(7853, -220)
+
+[node name="Light_4" parent="Light Mode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(11033, -174)
+
+[node name="Light_5" parent="Light Mode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(14260, -333)
+
+[node name="Light_6" parent="Light Mode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(17763, -657)
+
+[node name="Light2" type="ParallaxLayer" parent="Light Mode"]
+light_mask = 2
+visibility_layer = 2
+motion_scale = Vector2(1.25, 1)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Light_1" parent="Light Mode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(3393, -247)
+
+[node name="Light_2" parent="Light Mode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(9703, -497)
+
+[node name="Light_4" parent="Light Mode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(12784, -301)
+
+[node name="Light_5" parent="Light Mode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(16060, -554)
+
+[node name="Light_3" parent="Light Mode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(6752, -243)
+
+[node name="Lights1" parent="Light Mode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(2676, -174)
+
+[node name="Lights2" parent="Light Mode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(469, -612)
+
+[node name="Lights3" parent="Light Mode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(4359, -680)
+
+[node name="Lights4" parent="Light Mode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(8887, -227)
+
+[node name="Lights5" parent="Light Mode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(11859, -591)
+
+[node name="Lights6" parent="Light Mode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(14867, -155)
+
+[node name="Lights7" parent="Light Mode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(18737, -257)
+
 [node name="DarkMode" type="ParallaxBackground" parent="."]
 
 [node name="WhiteBG" type="ParallaxLayer" parent="DarkMode"]
@@ -1147,6 +1233,92 @@ color = Color(0, 0, 0, 1)
 position = Vector2(8207, -833)
 texture = ExtResource("7_jibxs")
 
+[node name="Light1" type="ParallaxLayer" parent="DarkMode"]
+modulate = Color(0, 0, 0, 1)
+light_mask = 2
+visibility_layer = 2
+motion_scale = Vector2(0.75, 1)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Lights1" parent="DarkMode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(6180, -425)
+
+[node name="Lights2" parent="DarkMode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(2512, -614)
+
+[node name="Lights3" parent="DarkMode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(7199, -504)
+
+[node name="Lights4" parent="DarkMode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(10504, -806)
+
+[node name="Lights5" parent="DarkMode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(13618, -703)
+
+[node name="Lights6" parent="DarkMode/Light1" instance=ExtResource("35_wac8y")]
+position = Vector2(16870, -315)
+
+[node name="Light_1" parent="DarkMode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(1606, -329)
+
+[node name="Light_2" parent="DarkMode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(5013, -266)
+
+[node name="Light_3" parent="DarkMode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(7853, -220)
+
+[node name="Light_4" parent="DarkMode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(11033, -174)
+
+[node name="Light_5" parent="DarkMode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(14260, -333)
+
+[node name="Light_6" parent="DarkMode/Light1" instance=ExtResource("36_j8f87")]
+position = Vector2(17763, -657)
+
+[node name="Light2" type="ParallaxLayer" parent="DarkMode"]
+modulate = Color(0, 0, 0, 1)
+light_mask = 2
+visibility_layer = 2
+motion_scale = Vector2(1.25, 1)
+motion_mirroring = Vector2(20000, 0)
+
+[node name="Light_1" parent="DarkMode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(3393, -247)
+
+[node name="Light_2" parent="DarkMode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(9703, -497)
+
+[node name="Light_4" parent="DarkMode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(12784, -301)
+
+[node name="Light_5" parent="DarkMode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(16060, -554)
+
+[node name="Light_3" parent="DarkMode/Light2" instance=ExtResource("36_j8f87")]
+position = Vector2(6752, -243)
+
+[node name="Lights1" parent="DarkMode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(2676, -174)
+
+[node name="Lights2" parent="DarkMode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(469, -612)
+
+[node name="Lights3" parent="DarkMode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(4359, -680)
+
+[node name="Lights4" parent="DarkMode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(8887, -227)
+
+[node name="Lights5" parent="DarkMode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(11859, -591)
+
+[node name="Lights6" parent="DarkMode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(14867, -155)
+
+[node name="Lights7" parent="DarkMode/Light2" instance=ExtResource("35_wac8y")]
+position = Vector2(18737, -257)
+
 [node name="End sceen" type="Node2D" parent="."]
 
 [node name="Mountain3" type="Sprite2D" parent="End sceen"]
@@ -1324,14 +1496,14 @@ layer_4/tile_data = PackedInt32Array(-393068, 196613, 18, -393065, 655362, 8, -3
 script = ExtResource("4_iccr0")
 
 [node name="CharacterBody2D" parent="." groups=["player"] instance=ExtResource("2_4o7g1")]
-position = Vector2(2873, -513)
+position = Vector2(3024, -455)
 scale = Vector2(0.75, 0.75)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="CharacterBody2D"]
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(2873, -513)
+position = Vector2(3024, -455)
 scale = Vector2(0.75, 0.75)
 zoom = Vector2(0.6, 0.6)
 limit_left = 0
